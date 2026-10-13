@@ -5,6 +5,66 @@
     "layout": {
       "contentSize": "720px",
       "wideSize": "1100px"
+    },
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "name": "Primary",
+          "color": "#007A58"
+        },
+        {
+          "slug": "secondary",
+          "name": "Secondary",
+          "color": "#3156A3"
+        },
+        {
+          "slug": "accent",
+          "name": "Accent",
+          "color": "#FFC107"
+        },
+        {
+          "slug": "base",
+          "name": "Base",
+          "color": "#FFFFFF"
+        },
+        {
+          "slug": "contrast",
+          "name": "Contrast",
+          "color": "#242628"
+        },
+        {
+          "slug": "surface",
+          "name": "Surface",
+          "color": "#F4F6F8"
+        },
+        {
+          "slug": "muted",
+          "name": "Muted",
+          "color": "#58616A"
+        },
+        {
+          "slug": "success",
+          "name": "Success",
+          "color": "#167341"
+        },
+        {
+          "slug": "warning",
+          "name": "Warning",
+          "color": "#855600"
+        },
+        {
+          "slug": "error",
+          "name": "Error",
+          "color": "#B42318"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var:preset|color|base",
+      "text": "var:preset|color|contrast"
     }
   }
 }
