@@ -24,6 +24,7 @@ Celestial3 — система разработки сайтов на WordPress, 
 | Layout | 1200/1600px | Боковые отступы spacing 40, root-padding-aware alignments | [ADR-0022](adr/0022-layout-system.md) |
 | Heading и Paragraph | Типографика темы, без локального выбора семейства/размера | Общие стили не дублируются; цвет доступен из палитры | [ADR-0024](adr/0024-heading-block-contract.md), [ADR-0025](adr/0025-paragraph-block-contract.md) |
 | Стандартные паттерны Core | Отключены | remove_theme_support(core-block-patterns) в functions.php на after_setup_theme | [ADR-0027](adr/0027-disable-core-patterns.md) |
+| Дополнительный CSS блоков | wp_enqueue_block_style на init | Пустой assets/blocks/button.css; механизм не регистрирует новые variations | [ADR-0028](adr/0028-per-block-theme-css.md) |
 | Сборка темы | Отсутствует | Файлы FSE-темы используются напрямую; сборочные зависимости и генерируемые build/dist не предусмотрены | [ADR-0013](adr/0013-fse-theme-without-build.md) |
 | Сборка и зависимости плагина | Ещё не выбраны | Инструменты и версии предстоит определить | — |
 | Развёртывание | Ещё не выбрано | Хостинг и процесс публикации предстоит определить | — |

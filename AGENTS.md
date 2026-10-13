@@ -37,6 +37,8 @@
 
 # Локальные приватные наработки
 
+Дополнительный готовый CSS Core-блоков подключай через celestial_theme_register_block_styles() и wp_enqueue_block_style на init по ADR-0028. Для каждой записи списка создай assets/blocks/<name>.css. Не путай подключение CSS с регистрацией style variation, не добавляй сборку темы; базовые свойства и токены оставляй в JSON. Гайд: wordpress/theme/docs/block-styles.md.
+
 Сохраняй отключение core-block-patterns через after_setup_theme в wordpress/theme/functions.php согласно ADR-0027. Не удаляй собственные или пользовательские паттерны и не расширяй отключение на удалённый каталог без отдельного решения.
 
 Для core/heading и core/paragraph сохраняй пустые settings.blocks.<block>.typography.fontFamilies/fontSizes по ADR-0024 и ADR-0025. Базовые стили наследуются из общих правил темы; цветовой выбор из палитры сохраняется. Дополнительные variations вводи только для подтверждённых повторяющихся сценариев. Инструкции компонентов хранятся в wordpress/theme/docs/blocks/.
