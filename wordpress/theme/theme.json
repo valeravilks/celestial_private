@@ -3,8 +3,8 @@
   "version": 3,
   "settings": {
     "layout": {
-      "contentSize": "720px",
-      "wideSize": "1100px"
+      "contentSize": "1200px",
+      "wideSize": "1600px"
     },
     "color": {
       "defaultPalette": false,
@@ -113,12 +113,182 @@
           "size": "clamp(6rem, 10vw, 8rem)"
         }
       ]
-    }
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Ubuntu",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": [
+                "file:./assets/fonts/ubuntu/ubuntu-400-normal.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Ubuntu",
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "src": [
+                "file:./assets/fonts/ubuntu/ubuntu-700-normal.woff2"
+              ]
+            }
+          ],
+          "fontFamily": "Ubuntu, sans-serif",
+          "name": "Ubuntu",
+          "slug": "ubuntu"
+        },
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Roboto",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": [
+                "file:./assets/fonts/roboto/roboto-400-normal.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Roboto",
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "src": [
+                "file:./assets/fonts/roboto/roboto-700-normal.woff2"
+              ]
+            }
+          ],
+          "fontFamily": "Roboto, sans-serif",
+          "name": "Roboto",
+          "slug": "roboto"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "sm",
+          "name": "SM",
+          "size": "0.875rem"
+        },
+        {
+          "slug": "md",
+          "name": "MD",
+          "size": "1rem"
+        },
+        {
+          "slug": "lg",
+          "name": "LG",
+          "size": "1.25rem"
+        },
+        {
+          "slug": "xl",
+          "name": "XL",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "2xl",
+          "name": "2XL",
+          "size": "1.75rem"
+        },
+        {
+          "slug": "3xl",
+          "name": "3XL",
+          "size": "2rem"
+        },
+        {
+          "slug": "4xl",
+          "name": "4XL",
+          "size": "2.5rem"
+        }
+      ],
+      "defaultFontSizes": false,
+      "customFontSize": false,
+      "fluid": false,
+      "fontWeight": false,
+      "lineHeight": false,
+      "letterSpacing": false
+    },
+    "custom": {
+      "fontWeight": {
+        "bold": "700",
+        "regular": "400"
+      },
+      "lineHeight": {
+        "normal": "1.6",
+        "relaxed": "1.75",
+        "snug": "1.4",
+        "tight": "1.2"
+      },
+      "letterSpacing": {
+        "normal": "0",
+        "wide": "0.08em"
+      }
+    },
+    "useRootPaddingAwareAlignments": true
   },
   "styles": {
     "color": {
       "background": "var:preset|color|base",
       "text": "var:preset|color|contrast"
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|ubuntu",
+      "fontSize": "var:preset|font-size|md",
+      "fontWeight": "var:custom|font-weight|regular",
+      "lineHeight": "var:custom|line-height|normal",
+      "letterSpacing": "var:custom|letter-spacing|normal"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|ubuntu",
+          "fontWeight": "var:custom|font-weight|bold",
+          "lineHeight": "var:custom|line-height|tight"
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--4-xl)",
+          "lineHeight": "var:custom|line-height|tight"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--3-xl)",
+          "lineHeight": "var:custom|line-height|tight"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--2-xl)",
+          "lineHeight": "var:custom|line-height|tight"
+        }
+      },
+      "h4": {
+        "typography": {
+          "fontSize": "var:preset|font-size|xl",
+          "lineHeight": "var:custom|line-height|tight"
+        }
+      },
+      "h5": {
+        "typography": {
+          "fontSize": "var:preset|font-size|lg",
+          "lineHeight": "var:custom|line-height|snug"
+        }
+      },
+      "h6": {
+        "typography": {
+          "fontSize": "var:preset|font-size|md",
+          "lineHeight": "var:custom|line-height|snug"
+        }
+      }
+    },
+    "spacing": {
+      "padding": {
+        "left": "var:preset|spacing|40",
+        "right": "var:preset|spacing|40",
+        "top": "0px",
+        "bottom": "0px"
+      }
     }
   }
 }

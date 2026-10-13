@@ -19,6 +19,9 @@ Celestial3 — система разработки сайтов на WordPress, 
 | Выбор цветов в редакторе | Только палитра сайта | defaultPalette: false, custom: false; controls текста и фона сохранены | [ADR-0018](adr/0018-site-palette-only.md) |
 | Расстояния | Девять пресетов 10–90 | Фиксированные rem и три clamp; правила в [документации темы](../wordpress/theme/docs/spacing.md) | [ADR-0019](adr/0019-spacing-scale.md) |
 | Выбор расстояний в редакторе | Только шкала сайта | defaultSpacingSizes: false, customSpacingSize: false, blockGap: true | [ADR-0020](adr/0020-site-spacing-only.md) |
+| Типографика | Локальные Ubuntu/Roboto 400/700, семь размеров | Базовый текст Ubuntu/md; токены веса и интервалов, правила H1–H6 | [ADR-0021](adr/0021-typography-system.md) |
+| Controls типографики | Размеры только из шкалы | Стандартные и произвольные размеры отключены; веса и интервалы задаются темой | [ADR-0023](adr/0023-typography-controls.md) |
+| Layout | 1200/1600px | Боковые отступы spacing 40, root-padding-aware alignments | [ADR-0022](adr/0022-layout-system.md) |
 | Сборка темы | Отсутствует | Файлы FSE-темы используются напрямую; сборочные зависимости и генерируемые build/dist не предусмотрены | [ADR-0013](adr/0013-fse-theme-without-build.md) |
 | Сборка и зависимости плагина | Ещё не выбраны | Инструменты и версии предстоит определить | — |
 | Развёртывание | Ещё не выбрано | Хостинг и процесс публикации предстоит определить | — |
