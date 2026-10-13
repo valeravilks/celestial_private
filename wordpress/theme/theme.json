@@ -223,7 +223,21 @@
         "wide": "0.08em"
       }
     },
-    "useRootPaddingAwareAlignments": true
+    "useRootPaddingAwareAlignments": true,
+    "blocks": {
+      "core/heading": {
+        "typography": {
+          "fontFamilies": [],
+          "fontSizes": []
+        }
+      },
+      "core/paragraph": {
+        "typography": {
+          "fontFamilies": [],
+          "fontSizes": []
+        }
+      }
+    }
   },
   "styles": {
     "color": {

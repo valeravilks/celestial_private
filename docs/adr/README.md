@@ -29,6 +29,8 @@ ADR (Architecture Decision Record) — запись о значимом архи
 | [0021](0021-typography-system.md) | Типографическая система FSE-темы | Принято | 2026-10-13 |
 | [0022](0022-layout-system.md) | Общий layout FSE-темы | Принято | 2026-10-13 |
 | [0023](0023-typography-controls.md) | Ограничение типографических controls редактора | Принято | 2026-10-13 |
+| [0024](0024-heading-block-contract.md) | Правила стандартного блока Heading | Принято | 2026-10-13 |
+| [0025](0025-paragraph-block-contract.md) | Правила стандартного блока Paragraph | Принято | 2026-10-13 |
 
 ## Как добавлять решения
 

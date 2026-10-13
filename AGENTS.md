@@ -35,6 +35,8 @@
 
 # Локальные приватные наработки
 
+Для core/heading и core/paragraph сохраняй пустые settings.blocks.<block>.typography.fontFamilies/fontSizes по ADR-0024 и ADR-0025. Базовые стили наследуются из общих правил темы; цветовой выбор из палитры сохраняется. Дополнительные variations вводи только для подтверждённых повторяющихся сценариев. Инструкции компонентов хранятся в wordpress/theme/docs/blocks/.
+
 Типографику и layout поддерживай по ADR-0021–0023 и документации темы. Используй локальные Ubuntu/Roboto 400/700, шкалу из документа типографики, H5–H6 со snug. Сохраняй defaultFontSizes: false, customFontSize: false, fluid: false; controls fontWeight/lineHeight/letterSpacing отключены. Layout: 1200/1600px, боковой padding через spacing 40, useRootPaddingAwareAlignments: true. Блоковые ограничения определяются отдельно.
 
 Шкалу расстояний темы поддерживай по ADR-0019 и `wordpress/theme/docs/spacing.md`: пресеты `10–90`, для 50 — `1.5rem`, для 60 — `2rem`. Сохраняй `settings.spacing.defaultSpacingSizes: false`, `customSpacingSize: false` и `blockGap: true` согласно ADR-0020. Доступность padding/margin и настройки layout определяются отдельно.
