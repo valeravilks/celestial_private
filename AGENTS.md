@@ -37,6 +37,8 @@
 
 # Локальные приватные наработки
 
+Сохраняй отключение core-block-patterns через after_setup_theme в wordpress/theme/functions.php согласно ADR-0027. Не удаляй собственные или пользовательские паттерны и не расширяй отключение на удалённый каталог без отдельного решения.
+
 Для core/heading и core/paragraph сохраняй пустые settings.blocks.<block>.typography.fontFamilies/fontSizes по ADR-0024 и ADR-0025. Базовые стили наследуются из общих правил темы; цветовой выбор из палитры сохраняется. Дополнительные variations вводи только для подтверждённых повторяющихся сценариев. Инструкции компонентов хранятся в wordpress/theme/docs/blocks/.
 
 Типографику и layout поддерживай по ADR-0021–0023 и документации темы. Используй локальные Ubuntu/Roboto 400/700, шкалу из документа типографики, H5–H6 со snug. Сохраняй defaultFontSizes: false, customFontSize: false, fluid: false; controls fontWeight/lineHeight/letterSpacing отключены. Layout: 1200/1600px, боковой padding через spacing 40, useRootPaddingAwareAlignments: true. Блоковые ограничения определяются отдельно.

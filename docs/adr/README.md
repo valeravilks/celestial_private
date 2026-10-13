@@ -32,6 +32,7 @@ ADR (Architecture Decision Record) — запись о значимом архи
 | [0024](0024-heading-block-contract.md) | Правила стандартного блока Heading | Принято | 2026-10-13 |
 | [0025](0025-paragraph-block-contract.md) | Правила стандартного блока Paragraph | Принято | 2026-10-13 |
 | [0026](0026-open-questions.md) | Отдельное хранение открытых вопросов и идей | Принято | 2026-10-13 |
+| [0027](0027-disable-core-patterns.md) | Отключение стандартных паттернов WordPress Core | Принято | 2026-10-13 |
 
 ## Как добавлять решения
 

@@ -23,6 +23,7 @@ Celestial3 — система разработки сайтов на WordPress, 
 | Controls типографики | Размеры только из шкалы | Стандартные и произвольные размеры отключены; веса и интервалы задаются темой | [ADR-0023](adr/0023-typography-controls.md) |
 | Layout | 1200/1600px | Боковые отступы spacing 40, root-padding-aware alignments | [ADR-0022](adr/0022-layout-system.md) |
 | Heading и Paragraph | Типографика темы, без локального выбора семейства/размера | Общие стили не дублируются; цвет доступен из палитры | [ADR-0024](adr/0024-heading-block-contract.md), [ADR-0025](adr/0025-paragraph-block-contract.md) |
+| Стандартные паттерны Core | Отключены | remove_theme_support(core-block-patterns) в functions.php на after_setup_theme | [ADR-0027](adr/0027-disable-core-patterns.md) |
 | Сборка темы | Отсутствует | Файлы FSE-темы используются напрямую; сборочные зависимости и генерируемые build/dist не предусмотрены | [ADR-0013](adr/0013-fse-theme-without-build.md) |
 | Сборка и зависимости плагина | Ещё не выбраны | Инструменты и версии предстоит определить | — |
 | Развёртывание | Ещё не выбрано | Хостинг и процесс публикации предстоит определить | — |
@@ -34,7 +35,7 @@ Celestial3 — система разработки сайтов на WordPress, 
 | `references/` | Локальные приватные наработки; исключены из Git и передачи; чтение агентом по явному запросу | [ADR-0015](adr/0015-local-private-references.md) |
 | `.gitignore` | Исключение локальных наработок и служебных файлов из Git | [ADR-0015](adr/0015-local-private-references.md) |
 | `wordpress/` | Самостоятельный корень разработки: исходники, конфигурация глобального wp-env и README | [ADR-0004](adr/0004-wordpress-gutenberg-fse.md) |
-| `wordpress/theme/` | Тема Celestial: `style.css`, `theme.json`, `templates/index.html` | [ADR-0009](adr/0009-separate-theme-and-plugin.md) |
+| `wordpress/theme/` | Тема Celestial: `style.css`, `functions.php`, `theme.json`, `templates/index.html` | [ADR-0009](adr/0009-separate-theme-and-plugin.md) |
 | `wordpress/plugin/` | Плагин Celestial: `celestial.php` | [ADR-0009](adr/0009-separate-theme-and-plugin.md) |
 | `docs/adr/` | Архитектурные решения, их реестр и шаблон | [ADR-0001](adr/0001-incremental-development-through-adrs.md), [ADR-0003](adr/0003-use-adrs-as-single-decision-record.md) |
 | `docs/questions/` | Внутренние отложенные вопросы и идеи, отдельные карточки и реестр | [ADR-0026](adr/0026-open-questions.md) |
