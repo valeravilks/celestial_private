@@ -37,6 +37,7 @@ Celestial3 — система разработки сайтов на WordPress, 
 | `wordpress/theme/` | Тема Celestial: `style.css`, `theme.json`, `templates/index.html` | [ADR-0009](adr/0009-separate-theme-and-plugin.md) |
 | `wordpress/plugin/` | Плагин Celestial: `celestial.php` | [ADR-0009](adr/0009-separate-theme-and-plugin.md) |
 | `docs/adr/` | Архитектурные решения, их реестр и шаблон | [ADR-0001](adr/0001-incremental-development-through-adrs.md), [ADR-0003](adr/0003-use-adrs-as-single-decision-record.md) |
+| `docs/questions/` | Внутренние отложенные вопросы и идеи, отдельные карточки и реестр | [ADR-0026](adr/0026-open-questions.md) |
 | `docs/architecture.md` | Текущая архитектура и инструменты | [ADR-0006](adr/0006-document-current-architecture.md) |
 | `AGENTS.md` | Правила проверки действующих решений и согласования их замены для агента | [ADR-0005](adr/0005-review-existing-decisions-before-replacement.md) |
 
