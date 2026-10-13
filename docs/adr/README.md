@@ -39,10 +39,12 @@ ADR (Architecture Decision Record) — запись о значимом архи
 | [0031](0031-plugin-editor-assets.md) | Отдельный код расширений редактора | Принято | 2026-10-13 |
 | [0032](0032-plugin-custom-blocks.md) | Исходники и регистрация собственных блоков | Принято | 2026-10-13 |
 | [0033](0033-goal-guided-development.md) | Развитие системы с опорой на цель владельца | Принято | 2026-10-13 |
-
 | [0034](0034-pattern-led-editor.md) | Сборка страниц из паттернов без ручной настройки дизайна | Принято | 2026-10-13 |
 | [0035](0035-templates-only-parts.md) | Шаблоны состоят только из template parts | [Заменено ADR-0036](0036-template-composition-with-groups.md) | 2026-10-13 |
 | [0036](0036-template-composition-with-groups.md) | Композиция шаблонов через Group и template parts | Принято | 2026-10-13 |
+| [0037](0037-internal-design-library.md) | Внутренняя библиотека Blocks и Sections | Принято | 2026-10-13 |
+| [0038](0038-style-variation-alternatives.md) | Альтернативные реализации одной style variation | Принято | 2026-10-13 |
+| [0039](0039-project-source-of-truth.md) | Код проекта как источник истины о выбранных элементах | Принято | 2026-10-13 |
 
 ## Как добавлять решения
 
