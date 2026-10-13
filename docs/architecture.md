@@ -13,7 +13,7 @@ Celestial3 — система разработки сайтов на WordPress, 
 | Платформа | WordPress | Запускается в Docker через wp-env; ядро хранится вне исходников проекта | [ADR-0004](adr/0004-wordpress-gutenberg-fse.md) |
 | Редактор | Gutenberg | Встроенный редактор блоков WordPress; отдельный плагин Gutenberg не установлен | [ADR-0004](adr/0004-wordpress-gutenberg-fse.md) |
 | Тема | Собственная FSE-тема Celestial | Основная тема по умолчанию; только внешнее представление, без сборки; каркас активирован | [ADR-0004](adr/0004-wordpress-gutenberg-fse.md), [ADR-0009](adr/0009-separate-theme-and-plugin.md), [ADR-0013](adr/0013-fse-theme-without-build.md) |
-| Плагин | Собственный WordPress-плагин Celestial | Минимальный каркас создан и активирован; дополнительной логики пока нет | [ADR-0009](adr/0009-separate-theme-and-plugin.md) |
+| Плагин | Собственный WordPress-плагин Celestial | Подключены Landing Pages, сборка общих ресурсов редактора и Example Static | [ADR-0009](adr/0009-separate-theme-and-plugin.md) |
 | Локальное окружение | `@wordpress/env` (wp-env) | Установлен глобально в окружении Node.js; [.wp-env.json](../wordpress/.wp-env.json) подключает компоненты и активирует тему после запуска | [ADR-0008](adr/0008-local-development-with-wp-env.md), [ADR-0014](adr/0014-plugin-scoped-development-tools.md) |
 | Цветовая система | 10 семантических токенов | Палитра зарегистрирована в theme.json; base — фон, contrast — текст; правила в [документации темы](../wordpress/theme/docs/colors.md) | [ADR-0017](adr/0017-semantic-color-palette.md) |
 | Выбор цветов в редакторе | Только палитра сайта | defaultPalette: false, custom: false; controls текста и фона сохранены | [ADR-0018](adr/0018-site-palette-only.md) |
@@ -27,7 +27,7 @@ Celestial3 — система разработки сайтов на WordPress, 
 | Дополнительный CSS блоков | wp_enqueue_block_style на init | Пустой assets/blocks/button.css; механизм не регистрирует новые variations | [ADR-0028](adr/0028-per-block-theme-css.md) |
 | Глобальные PHP-функции | Префикс celestial_ | Уникальные имена в теме и плагине; проверка при переносе и ревью | [ADR-0029](adr/0029-function-prefix.md) |
 | Сборка темы | Отсутствует | Файлы FSE-темы используются напрямую; сборочные зависимости и генерируемые build/dist не предусмотрены | [ADR-0013](adr/0013-fse-theme-without-build.md) |
-| Сборка и зависимости плагина | Ещё не выбраны | Инструменты и версии предстоит определить | — |
+| Сборка плагина | @wordpress/scripts и npm-run-all | Отдельные editor/blocks bundles; npm-конфигурация и lock-файл внутри плагина | [ADR-0031](adr/0031-plugin-editor-assets.md), [ADR-0032](adr/0032-plugin-custom-blocks.md) |
 | Развёртывание | Ещё не выбрано | Хостинг и процесс публикации предстоит определить | — |
 
 ## Структура репозитория
@@ -38,7 +38,7 @@ Celestial3 — система разработки сайтов на WordPress, 
 | `.gitignore` | Исключение локальных наработок и служебных файлов из Git | [ADR-0015](adr/0015-local-private-references.md) |
 | `wordpress/` | Самостоятельный корень разработки: исходники, конфигурация глобального wp-env и README | [ADR-0004](adr/0004-wordpress-gutenberg-fse.md) |
 | `wordpress/theme/` | Тема Celestial: `style.css`, `functions.php`, `theme.json`, `templates/index.html` | [ADR-0009](adr/0009-separate-theme-and-plugin.md) |
-| `wordpress/plugin/` | Плагин Celestial: `celestial.php` | [ADR-0009](adr/0009-separate-theme-and-plugin.md) |
+| `wordpress/plugin/` | Плагин Celestial: `celestial.php`, `includes/`, `editor/`, `blocks/` и локальные инструменты | [ADR-0009](adr/0009-separate-theme-and-plugin.md) |
 | `docs/adr/` | Архитектурные решения, их реестр и шаблон | [ADR-0001](adr/0001-incremental-development-through-adrs.md), [ADR-0003](adr/0003-use-adrs-as-single-decision-record.md) |
 | `docs/questions/` | Внутренние отложенные вопросы и идеи, отдельные карточки и реестр | [ADR-0026](adr/0026-open-questions.md) |
 | `docs/architecture.md` | Текущая архитектура и инструменты | [ADR-0006](adr/0006-document-current-architecture.md) |
@@ -46,11 +46,11 @@ Celestial3 — система разработки сайтов на WordPress, 
 
 Тема отвечает за оформление, плагин — за возможности, сохраняемые при смене темы. Плагин также может содержать блоки и интерфейс. wp-env подключает локальные каталоги в `wp-content/themes/theme` и `wp-content/plugins/plugin`; отображаемое название обоих компонентов — Celestial.
 
-wp-env устанавливается глобально; проверенная версия — 11.17.0. В корне `wordpress/` нет `package.json`, lock-файла, `.nvmrc` и локальных npm-зависимостей. Будущие инструменты Node.js/npm будут размещаться в `wordpress/plugin/`, но метод разработки плагина пока не определён. Сборка темы не предусмотрена согласно ADR-0013. Параметры WordPress/PHP используют значения по умолчанию wp-env; конкретные версии ядра и PHP пока не закреплены. Инструкции запуска находятся в [README проекта](../wordpress/README.md).
+wp-env устанавливается глобально; проверенная версия — 11.17.0. В корне `wordpress/` нет `package.json`, lock-файла, `.nvmrc` и локальных npm-зависимостей. Инструменты Node.js/npm находятся в `wordpress/plugin/` и описаны в [README плагина](../wordpress/plugin/README.md). Сборка темы не предусмотрена согласно ADR-0013. Параметры WordPress/PHP используют значения по умолчанию wp-env; конкретные версии ядра и PHP пока не закреплены. Инструкции запуска находятся в [README проекта](../wordpress/README.md).
 
 ## Граница передачи клиенту
 
-Согласно [ADR-0014](adr/0014-plugin-scoped-development-tools.md), вся разработка ведётся в `wordpress/`. В корне находятся тема, плагин, `.wp-env.json`, `.gitignore` и README. Окружение запускается прямой командой глобального `wp-env` из этого каталога. Будущие конфигурации и зависимости плагина будут находиться внутри `plugin/`.
+Согласно [ADR-0014](adr/0014-plugin-scoped-development-tools.md), вся разработка ведётся в `wordpress/`. В корне находятся тема, плагин, `.wp-env.json`, `.gitignore` и README. Окружение запускается прямой командой глобального `wp-env` из этого каталога. Конфигурации и зависимости плагина находятся внутри `plugin/`. Для клиентской поставки требуется заново собрать и включить `plugin/build/`; `node_modules/` для работы WordPress не нужен.
 
 ADR, описание архитектуры, правила агента и приватные заметки остаются вне `wordpress/`. Клиент получает самостоятельный проект без этих материалов и истории внутреннего репозитория. Инструкции разработки и установки находятся в [wordpress/README.md](../wordpress/README.md).
 
