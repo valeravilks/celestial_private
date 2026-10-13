@@ -25,6 +25,7 @@ Celestial3 — система разработки сайтов на WordPress, 
 | Дополнительный CSS блоков | wp_enqueue_block_style на init | Пустой assets/blocks/button.css; механизм не регистрирует новые variations | [ADR-0028](adr/0028-per-block-theme-css.md) |
 | Глобальные PHP-функции | Префикс celestial_ | Уникальные имена в теме и плагине; проверка при переносе и ревью | [ADR-0029](adr/0029-function-prefix.md) |
 | Дизайн редактора | Глобальные ограничения, сборка из паттернов | Controls цвета, spacing, типографики и других стандартных свойств скрыты; токены и CSS сохранены | [ADR-0034](adr/0034-pattern-led-editor.md) |
+| Шаблоны | Только template parts | Разметка и блоки находятся в parts/; index подключает main-index | [ADR-0035](adr/0035-templates-only-parts.md) |
 | Сборка темы | Отсутствует | Файлы FSE-темы используются напрямую; сборочные зависимости и генерируемые build/dist не предусмотрены | [ADR-0013](adr/0013-fse-theme-without-build.md) |
 | Сборка плагина | @wordpress/scripts и npm-run-all | Отдельные editor/blocks bundles; npm-конфигурация и lock-файл внутри плагина | [ADR-0031](adr/0031-plugin-editor-assets.md), [ADR-0032](adr/0032-plugin-custom-blocks.md) |
 | Развёртывание | Ещё не выбрано | Хостинг и процесс публикации предстоит определить | — |
