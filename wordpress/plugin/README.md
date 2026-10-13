@@ -3,7 +3,7 @@
 ## Структура
 
 - celestial.php — точка входа и явное подключение PHP-модулей.
-- includes/<feature>/index.php — функциональность сайта. Сейчас подключён landing-pages: публичный тип записи Landing Page, доступный в Gutenberg.
+- includes/<feature>/index.php — функциональность сайта. Подключены landing-pages и editor-policy с общими ограничениями дизайна редактора.
 - editor/index.js — вход для общих расширений Gutenberg; пока содержит только комментарий.
 - blocks/<block>/ — исходники собственных блоков; сейчас только example-static.
 - build/editor/ и build/blocks/ — генерируемые результаты; node_modules/ — локальные зависимости. Эти каталоги исключены из Git.

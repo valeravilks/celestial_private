@@ -9,6 +9,7 @@
 defined( 'ABSPATH' ) || exit;
 
 require_once __DIR__ . '/includes/landing-pages/index.php';
+require_once __DIR__ . '/includes/editor-policy/index.php';
 
 /**
  * Load shared editor extensions when their build is available.

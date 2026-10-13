@@ -4,7 +4,9 @@
   "settings": {
     "layout": {
       "contentSize": "1200px",
-      "wideSize": "1600px"
+      "wideSize": "1600px",
+      "allowEditing": false,
+      "allowSizingOnChildren": false
     },
     "color": {
       "defaultPalette": false,
@@ -60,12 +62,21 @@
           "name": "Error",
           "color": "#B42318"
         }
-      ]
+      ],
+      "background": false,
+      "text": false,
+      "link": false,
+      "customGradient": false,
+      "defaultGradients": false,
+      "customDuotone": false,
+      "defaultDuotone": false,
+      "gradients": [],
+      "duotone": []
     },
     "spacing": {
       "defaultSpacingSizes": false,
       "customSpacingSize": false,
-      "blockGap": true,
+      "blockGap": false,
       "spacingSizes": [
         {
           "slug": "10",
@@ -112,7 +123,9 @@
           "name": "90",
           "size": "clamp(6rem, 10vw, 8rem)"
         }
-      ]
+      ],
+      "padding": false,
+      "margin": false
     },
     "typography": {
       "fontFamilies": [
@@ -205,7 +218,11 @@
       "fluid": false,
       "fontWeight": false,
       "lineHeight": false,
-      "letterSpacing": false
+      "letterSpacing": false,
+      "fontStyle": false,
+      "textTransform": false,
+      "textDecoration": false,
+      "dropCap": false
     },
     "custom": {
       "fontWeight": {
@@ -224,19 +241,20 @@
       }
     },
     "useRootPaddingAwareAlignments": true,
-    "blocks": {
-      "core/heading": {
-        "typography": {
-          "fontFamilies": [],
-          "fontSizes": []
-        }
-      },
-      "core/paragraph": {
-        "typography": {
-          "fontFamilies": [],
-          "fontSizes": []
-        }
-      }
+    "appearanceTools": false,
+    "border": {
+      "color": false,
+      "radius": false,
+      "style": false,
+      "width": false
+    },
+    "dimensions": {
+      "minHeight": false,
+      "aspectRatio": false
+    },
+    "shadow": {
+      "defaultPresets": false,
+      "presets": []
     }
   },
   "styles": {

@@ -18,16 +18,13 @@ Celestial3 — система разработки сайтов на WordPress, 
 | Плагин | Собственный WordPress-плагин Celestial | Подключены Landing Pages, сборка общих ресурсов редактора и Example Static | [ADR-0009](adr/0009-separate-theme-and-plugin.md) |
 | Локальное окружение | `@wordpress/env` (wp-env) | Установлен глобально в окружении Node.js; [.wp-env.json](../wordpress/.wp-env.json) подключает компоненты и активирует тему после запуска | [ADR-0008](adr/0008-local-development-with-wp-env.md), [ADR-0014](adr/0014-plugin-scoped-development-tools.md) |
 | Цветовая система | 10 семантических токенов | Палитра зарегистрирована в theme.json; base — фон, contrast — текст; правила в [документации темы](../wordpress/theme/docs/colors.md) | [ADR-0017](adr/0017-semantic-color-palette.md) |
-| Выбор цветов в редакторе | Только палитра сайта | defaultPalette: false, custom: false; controls текста и фона сохранены | [ADR-0018](adr/0018-site-palette-only.md) |
 | Расстояния | Девять пресетов 10–90 | Фиксированные rem и три clamp; правила в [документации темы](../wordpress/theme/docs/spacing.md) | [ADR-0019](adr/0019-spacing-scale.md) |
-| Выбор расстояний в редакторе | Только шкала сайта | defaultSpacingSizes: false, customSpacingSize: false, blockGap: true | [ADR-0020](adr/0020-site-spacing-only.md) |
 | Типографика | Локальные Ubuntu/Roboto 400/700, семь размеров | Базовый текст Ubuntu/md; токены веса и интервалов, правила H1–H6 | [ADR-0021](adr/0021-typography-system.md) |
-| Controls типографики | Размеры только из шкалы | Стандартные и произвольные размеры отключены; веса и интервалы задаются темой | [ADR-0023](adr/0023-typography-controls.md) |
 | Layout | 1200/1600px | Боковые отступы spacing 40, root-padding-aware alignments | [ADR-0022](adr/0022-layout-system.md) |
-| Heading и Paragraph | Типографика темы, без локального выбора семейства/размера | Общие стили не дублируются; цвет доступен из палитры | [ADR-0024](adr/0024-heading-block-contract.md), [ADR-0025](adr/0025-paragraph-block-contract.md) |
 | Стандартные паттерны Core | Отключены | remove_theme_support(core-block-patterns) в functions.php на after_setup_theme | [ADR-0027](adr/0027-disable-core-patterns.md) |
 | Дополнительный CSS блоков | wp_enqueue_block_style на init | Пустой assets/blocks/button.css; механизм не регистрирует новые variations | [ADR-0028](adr/0028-per-block-theme-css.md) |
 | Глобальные PHP-функции | Префикс celestial_ | Уникальные имена в теме и плагине; проверка при переносе и ревью | [ADR-0029](adr/0029-function-prefix.md) |
+| Дизайн редактора | Глобальные ограничения, сборка из паттернов | Controls цвета, spacing, типографики и других стандартных свойств скрыты; токены и CSS сохранены | [ADR-0034](adr/0034-pattern-led-editor.md) |
 | Сборка темы | Отсутствует | Файлы FSE-темы используются напрямую; сборочные зависимости и генерируемые build/dist не предусмотрены | [ADR-0013](adr/0013-fse-theme-without-build.md) |
 | Сборка плагина | @wordpress/scripts и npm-run-all | Отдельные editor/blocks bundles; npm-конфигурация и lock-файл внутри плагина | [ADR-0031](adr/0031-plugin-editor-assets.md), [ADR-0032](adr/0032-plugin-custom-blocks.md) |
 | Развёртывание | Ещё не выбрано | Хостинг и процесс публикации предстоит определить | — |
