@@ -17,6 +17,8 @@ Celestial3 — система разработки сайтов на WordPress, 
 | Локальное окружение | `@wordpress/env` (wp-env) | Установлен глобально в окружении Node.js; [.wp-env.json](../wordpress/.wp-env.json) подключает компоненты и активирует тему после запуска | [ADR-0008](adr/0008-local-development-with-wp-env.md), [ADR-0014](adr/0014-plugin-scoped-development-tools.md) |
 | Цветовая система | 10 семантических токенов | Палитра зарегистрирована в theme.json; base — фон, contrast — текст; правила в [документации темы](../wordpress/theme/docs/colors.md) | [ADR-0017](adr/0017-semantic-color-palette.md) |
 | Выбор цветов в редакторе | Только палитра сайта | defaultPalette: false, custom: false; controls текста и фона сохранены | [ADR-0018](adr/0018-site-palette-only.md) |
+| Расстояния | Девять пресетов 10–90 | Фиксированные rem и три clamp; правила в [документации темы](../wordpress/theme/docs/spacing.md) | [ADR-0019](adr/0019-spacing-scale.md) |
+| Выбор расстояний в редакторе | Только шкала сайта | defaultSpacingSizes: false, customSpacingSize: false, blockGap: true | [ADR-0020](adr/0020-site-spacing-only.md) |
 | Сборка темы | Отсутствует | Файлы FSE-темы используются напрямую; сборочные зависимости и генерируемые build/dist не предусмотрены | [ADR-0013](adr/0013-fse-theme-without-build.md) |
 | Сборка и зависимости плагина | Ещё не выбраны | Инструменты и версии предстоит определить | — |
 | Развёртывание | Ещё не выбрано | Хостинг и процесс публикации предстоит определить | — |

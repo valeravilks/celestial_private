@@ -35,6 +35,8 @@
 
 # Локальные приватные наработки
 
+Шкалу расстояний темы поддерживай по ADR-0019 и `wordpress/theme/docs/spacing.md`: пресеты `10–90`, для 50 — `1.5rem`, для 60 — `2rem`. Сохраняй `settings.spacing.defaultSpacingSizes: false`, `customSpacingSize: false` и `blockGap: true` согласно ADR-0020. Доступность padding/margin и настройки layout определяются отдельно.
+
 В `theme.json` сохраняй `settings.color.defaultPalette: false` и `settings.color.custom: false`: стандартные controls цветов должны предлагать только палитру сайта. Не отключай controls текста и фона ради этого ограничения. Основание: `docs/adr/0018-site-palette-only.md`.
 
 Цветовую систему темы поддерживай по ADR-0017 и `wordpress/theme/docs/colors.md`: `base` — основной фон, `contrast` — основной текст; ровно 10 принятых ролей палитры. При изменении значений обновляй документацию и проверяй контраст применяемых пар. При переносе остальных правил из наработок не используй обратную трактовку этих ролей. Основание: `docs/adr/0017-semantic-color-palette.md`.
