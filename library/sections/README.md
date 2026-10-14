@@ -17,3 +17,5 @@ sections/<section>/
 Секции:
 
 - [Header: Site Title и Navigation](header-title-navigation/description.md) — название слева, меню справа; начальная реализация.
+
+- [Footer: Copyright](footer-copyright/description.md) — название проекта и год.

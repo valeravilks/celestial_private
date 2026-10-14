@@ -21,7 +21,7 @@ Header, footer, Query, Post Content, Heading и другие содержате�
 
 ## Базовый комплект
 
-Все шаблоны подключают простые header, содержимое и footer. Header подключает файловый pattern celestial/header-title-navigation: название сайта слева и Navigation справа внутри contentSize; Footer — название и описание сайта. Семантические header/footer задаются при подключении частей; main находится внутри части содержимого.
+Все шаблоны подключают простые header, содержимое и footer. Header подключает файловый pattern celestial/header-title-navigation: название сайта слева и Navigation справа внутри contentSize; Footer подключает файловый pattern celestial/footer-copyright с текстом «© Celestial 2026»; название и год редактируются вручную. Семантические header/footer задаются при подключении частей; main находится внутри части содержимого.
 
 | Шаблон | Часть содержимого | Назначение |
 | --- | --- | --- |
