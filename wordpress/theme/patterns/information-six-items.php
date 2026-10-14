@@ -8,12 +8,16 @@
 ?>
 <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"base","textColor":"contrast","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|50"}},"layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull has-contrast-color has-base-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group">
 <!-- wp:paragraph {"className":"is-style-subtitle"} -->
 <p class="is-style-subtitle">ВАЖНО ЗНАТЬ</p>
 <!-- /wp:paragraph -->
 <!-- wp:heading {"level":2} -->
 <h2 class="wp-block-heading">Шесть важных деталей вашего предложения</h2>
 <!-- /wp:heading -->
+</div>
+<!-- /wp:group -->
 <!-- wp:columns -->
 <div class="wp-block-columns">
 <!-- wp:column -->
