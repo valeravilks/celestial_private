@@ -15,37 +15,37 @@
         {
           "slug": "primary",
           "name": "Primary",
-          "color": "#007A58"
+          "color": "#344638"
         },
         {
           "slug": "secondary",
           "name": "Secondary",
-          "color": "#3156A3"
+          "color": "#755640"
         },
         {
           "slug": "accent",
           "name": "Accent",
-          "color": "#FFC107"
+          "color": "#C7A878"
         },
         {
           "slug": "base",
           "name": "Base",
-          "color": "#FFFFFF"
+          "color": "#FAF8F3"
         },
         {
           "slug": "contrast",
           "name": "Contrast",
-          "color": "#242628"
+          "color": "#252B25"
         },
         {
           "slug": "surface",
           "name": "Surface",
-          "color": "#F4F6F8"
+          "color": "#EEEDE5"
         },
         {
           "slug": "muted",
           "name": "Muted",
-          "color": "#58616A"
+          "color": "#5D655D"
         },
         {
           "slug": "success",
@@ -316,6 +316,23 @@
         "typography": {
           "fontSize": "var:preset|font-size|md",
           "lineHeight": "var:custom|line-height|snug"
+        }
+      },
+      "button": {
+        "color": {
+          "background": "var:preset|color|primary",
+          "text": "var:preset|color|base"
+        },
+        "typography": {
+          "fontWeight": "var:custom|font-weight|bold"
+        },
+        "spacing": {
+          "padding": {
+            "top": "var:preset|spacing|30",
+            "bottom": "var:preset|spacing|30",
+            "left": "var:preset|spacing|50",
+            "right": "var:preset|spacing|50"
+          }
         }
       }
     },

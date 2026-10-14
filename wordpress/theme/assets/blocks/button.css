@@ -1,0 +1,2 @@
+.wp-block-button.is-style-outline .wp-block-button__link{background:transparent;color:var(--wp--preset--color--primary);border:1px solid currentColor;}
+.wp-element-button:focus-visible{outline:3px solid var(--wp--preset--color--primary);outline-offset:3px;}
