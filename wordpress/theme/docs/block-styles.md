@@ -46,3 +46,5 @@ button → core/button → assets/blocks/button.css → celestial-button
 В information-six-items Subtitle и H2 объединены Group с blockGap spacing 20; до колонок используется spacing 50. Это правило композиции паттерна, а не глобальный отступ текстового стиля.
 
 [Оформление Icon](blocks/icon.md): Plain, Circle и Rounded square; готовый CSS assets/blocks/icon.css.
+
+В information-six-items оба ряда колонок объединены отдельной Group содержимого: gap между рядами spacing 50. Корневая секция содержит вводную Group и Group контента; иерархия — spacing 20 < spacing 50 ≤ padding spacing 70.

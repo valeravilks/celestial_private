@@ -18,6 +18,8 @@
 <!-- /wp:heading -->
 </div>
 <!-- /wp:group -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group">
 <!-- wp:columns -->
 <div class="wp-block-columns">
 <!-- wp:column -->
@@ -92,5 +94,7 @@
 <!-- /wp:column -->
 </div>
 <!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
 </section>
 <!-- /wp:group -->
