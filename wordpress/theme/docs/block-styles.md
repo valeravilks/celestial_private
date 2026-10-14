@@ -50,3 +50,5 @@ button → core/button → assets/blocks/button.css → celestial-button
 В information-six-items оба ряда колонок объединены отдельной Group содержимого: gap между рядами spacing 50. Корневая секция содержит вводную Group и Group контента; иерархия — spacing 20 < spacing 50 ≤ padding spacing 70.
 
 В information-six-items межгрупповой gap увеличен до spacing 60 (2rem): вводная группа сохраняет 20, расстояние между рядами — 50, padding секции — 70.
+
+Subtitle отображается прописными буквами через text-transform: uppercase. Сохранённый текст не преобразуется: автор может вводить его в любом регистре.
