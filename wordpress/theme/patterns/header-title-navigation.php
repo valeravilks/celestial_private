@@ -13,7 +13,9 @@
 <div class="wp-block-group">
 <!-- wp:site-title {"level":0} /-->
 <!-- wp:navigation {"overlayMenu":"mobile","layout":{"type":"flex","justifyContent":"right"}} -->
-<!-- wp:page-list /-->
+<!-- wp:navigation-link {"label": "Преимущества", "url": "/#benefits", "kind": "custom"} /-->
+<!-- wp:navigation-link {"label": "Как работаем", "url": "/#process", "kind": "custom"} /-->
+<!-- wp:navigation-link {"label": "Контакт", "url": "/#contact", "kind": "custom"} /-->
 <!-- /wp:navigation -->
 </div>
 <!-- /wp:group -->

@@ -363,6 +363,11 @@
       "name": "content-404",
       "title": "Content: 404",
       "area": "uncategorized"
+    },
+    {
+      "name": "content-front-page",
+      "title": "Content: Front Page",
+      "area": "uncategorized"
     }
   ]
 }

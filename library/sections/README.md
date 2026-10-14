@@ -19,3 +19,12 @@ sections/<section>/
 - [Header: Site Title и Navigation](header-title-navigation/description.md) — название слева, меню справа; начальная реализация.
 
 - [Footer: Copyright](footer-copyright/description.md) — название проекта и год.
+
+## Продуктовая страница Celestial
+
+- [Celestial: первый экран](product-hero/description.md)
+- [Celestial: преимущества](product-benefits/description.md)
+- [Celestial: состав проекта](product-deliverables/description.md)
+- [Celestial: этапы работы](product-process/description.md)
+- [Celestial: вопросы](product-faq/description.md)
+- [Celestial: контакт](product-contact/description.md)
