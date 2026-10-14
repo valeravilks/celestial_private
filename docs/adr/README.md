@@ -56,6 +56,7 @@ ADR (Architecture Decision Record) — запись о значимом архи
 | [0048](0048-icon-size-and-presentation-styles.md) | Размер и варианты оформления Icon | [Заменено ADR-0049](0049-larger-icon-containers.md) | 2026-10-14 |
 | [0049](0049-larger-icon-containers.md) | Увеличенные контейнеры вариантов Icon | [Заменено ADR-0050](0050-balanced-icon-containers.md) | 2026-10-14 |
 | [0050](0050-balanced-icon-containers.md) | Средний размер контейнеров Icon | Принято | 2026-10-14 |
+| [0051](0051-section-spacing-hierarchy.md) | Смысловая группировка и иерархия расстояний в секциях | Принято | 2026-10-14 |
 
 ## Как добавлять решения
 
