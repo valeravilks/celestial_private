@@ -238,6 +238,11 @@
       "letterSpacing": {
         "normal": "0",
         "wide": "0.08em"
+      },
+      "icon": {
+        "size": "2rem",
+        "containerSize": "3rem",
+        "roundedRadius": "0.5rem"
       }
     },
     "useRootPaddingAwareAlignments": true,
@@ -320,6 +325,13 @@
         "right": "var:preset|spacing|40",
         "top": "0px",
         "bottom": "0px"
+      }
+    },
+    "blocks": {
+      "core/icon": {
+        "color": {
+          "text": "var:preset|color|contrast"
+        }
       }
     }
   },

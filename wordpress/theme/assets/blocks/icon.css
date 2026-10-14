@@ -1,0 +1,35 @@
+.wp-block-icon {
+	width: var(--wp--custom--icon--size);
+	height: var(--wp--custom--icon--size);
+}
+
+.wp-block-icon > svg {
+	display: block;
+	width: var(--wp--custom--icon--size);
+	height: var(--wp--custom--icon--size);
+}
+
+.wp-block-icon.is-style-circle,
+.wp-block-icon.is-style-rounded-square {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: var(--wp--custom--icon--container-size);
+	height: var(--wp--custom--icon--container-size);
+	background-color: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--base);
+}
+
+.wp-block-icon.is-style-circle {
+	border-radius: 50%;
+}
+
+.wp-block-icon.is-style-rounded-square {
+	border-radius: var(--wp--custom--icon--rounded-radius);
+}
+
+.wp-block-icon.is-style-circle > svg,
+.wp-block-icon.is-style-rounded-square > svg {
+	flex: none;
+}

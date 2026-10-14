@@ -10,7 +10,7 @@
 button → core/button → assets/blocks/button.css → celestial-button
 ```
 
-Сейчас в списке только `button`. Файл `assets/blocks/button.css` пустой: это точка расширения без новых визуальных правил. `group` из старого проекта не подключён, пока у него нет собственного CSS-файла.
+В списке подключены `button`, `paragraph` и `icon`. Файл `assets/blocks/button.css` пустой: это точка расширения без новых визуальных правил. `group` из старого проекта не подключён, пока у него нет собственного CSS-файла.
 
 ## Добавление блока
 
@@ -44,3 +44,5 @@ button → core/button → assets/blocks/button.css → celestial-button
 Стиль Paragraph Subtitle зарегистрирован с именем subtitle. assets/blocks/paragraph.css задаёт выбранное оформление: sm, bold, wide, snug; текст цвета muted и декоративная круглая точка primary перед ним. Размер точки и промежуток — spacing 20. Паттерн «Features: шесть пунктов с иконками» использует этот стиль и шесть декоративных Lucide.
 
 В information-six-items Subtitle и H2 объединены Group с blockGap spacing 20; до колонок используется spacing 50. Это правило композиции паттерна, а не глобальный отступ текстового стиля.
+
+[Оформление Icon](blocks/icon.md): Plain, Circle и Rounded square; готовый CSS assets/blocks/icon.css.
