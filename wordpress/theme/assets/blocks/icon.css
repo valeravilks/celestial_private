@@ -32,4 +32,6 @@
 .wp-block-icon.is-style-circle > svg,
 .wp-block-icon.is-style-rounded-square > svg {
 	flex: none;
+	color: var(--wp--preset--color--base);
+	fill: currentColor;
 }

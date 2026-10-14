@@ -53,7 +53,8 @@ ADR (Architecture Decision Record) — запись о значимом архи
 | [0045](0045-project-first-library-promotion.md) | Разработка в проекте, перенос в библиотеку по запросу | Принято | 2026-10-14 |
 | [0046](0046-section-heading-group.md) | Общая Group для Subtitle и заголовка секции | Принято | 2026-10-14 |
 | [0047](0047-maintenance-current-rule-audit.md) | Проверка актуальных правил при обслуживании | Принято | 2026-10-14 |
-| [0048](0048-icon-size-and-presentation-styles.md) | Размер и варианты оформления Icon | Принято | 2026-10-14 |
+| [0048](0048-icon-size-and-presentation-styles.md) | Размер и варианты оформления Icon | [Заменено ADR-0049](0049-larger-icon-containers.md) | 2026-10-14 |
+| [0049](0049-larger-icon-containers.md) | Увеличенные контейнеры вариантов Icon | Принято | 2026-10-14 |
 
 ## Как добавлять решения
 

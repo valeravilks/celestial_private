@@ -241,7 +241,7 @@
       },
       "icon": {
         "size": "2rem",
-        "containerSize": "3rem",
+        "containerSize": "6rem",
         "roundedRadius": "0.5rem"
       }
     },
