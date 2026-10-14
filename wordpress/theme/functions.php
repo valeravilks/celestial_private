@@ -18,7 +18,7 @@ add_action( 'after_setup_theme', 'celestial_disable_core_patterns' );
  * Attach theme CSS files to their corresponding Core blocks.
  */
 function celestial_theme_register_block_styles(): void {
-	$styled_blocks = array( 'button' );
+	$styled_blocks = array( 'button', 'paragraph' );
 
 	foreach ( $styled_blocks as $block_name ) {
 		$path = "assets/blocks/{$block_name}.css";
@@ -57,3 +57,11 @@ function celestial_theme_register_pattern_categories(): void {
 }
 
 add_action( 'init', 'celestial_theme_register_pattern_categories' );
+
+/**
+ * Register the selected Paragraph subtitle style.
+ */
+function celestial_theme_register_subtitle_style(): void {
+	register_block_style( 'core/paragraph', array( 'name' => 'subtitle', 'label' => __( 'Subtitle', 'celestial' ) ) );
+}
+add_action( 'init', 'celestial_theme_register_subtitle_style' );

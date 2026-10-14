@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "title": "Subtitle",
+  "slug": "subtitle",
+  "blockTypes": [
+    "core/paragraph"
+  ],
+  "styles": {
+    "typography": {
+      "fontSize": "var:preset|font-size|sm",
+      "fontWeight": "var:custom|font-weight|bold",
+      "letterSpacing": "var:custom|letter-spacing|wide",
+      "lineHeight": "var:custom|line-height|snug"
+    }
+  }
+}

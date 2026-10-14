@@ -28,3 +28,5 @@ sections/<section>/
 - [Process: три этапа](process-three-steps/description.md) — категория `process`.
 - [FAQ: вопросы и ответы](faq-text/description.md) — категория `faq`.
 - [Contact: приглашение к разговору](contact-intro/description.md) — категория `contact`.
+
+- [Информационная секция: шесть пунктов с иконками](information-six-items/description.md) — категория features.

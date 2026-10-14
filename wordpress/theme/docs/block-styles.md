@@ -40,3 +40,5 @@ button → core/button → assets/blocks/button.css → celestial-button
 ```
 
 Это пример для будущей реализации: сейчас `button-link` не зарегистрирован, правило не добавлено в `button.css`. Не дублировать в CSS цвета, размеры и отступы, которые уже корректно определены JSON. При анимации учитывать `prefers-reduced-motion`.
+
+Стиль Paragraph Subtitle зарегистрирован с именем subtitle. assets/blocks/paragraph.css задаёт выбранное оформление: sm, bold, wide, snug. Паттерн «Features: шесть пунктов с иконками» использует этот стиль и шесть декоративных Lucide.
