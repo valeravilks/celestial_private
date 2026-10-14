@@ -10,7 +10,7 @@
 
 ## Состав
 
-Paragraph со style variation subtitle, H2, два Columns по три Column. Каждый пункт содержит core/icon, H3 и Paragraph. На узкой ширине стандартные Columns складываются вертикально.
+Корневая Group содержит вводную Group (Paragraph со style variation subtitle и H2) и Group контента (два Columns по три Column). Внутри вводной группы gap 20; до контента gap 60; между рядами gap 50; вертикальный padding 70. Иерархия 20 < 60 ≤ 70 соответствует ADR-0051. Каждый пункт содержит core/icon, H3 и Paragraph. На узкой ширине стандартные Columns складываются вертикально.
 
 ## Содержимое
 
@@ -18,7 +18,7 @@ Paragraph со style variation subtitle, H2, два Columns по три Column. 
 
 ## Зависимости
 
-Стиль paragraph/subtitle (выбрана реализация plain), категория features, коллекция Lucide в Celestial, spacing 50/70, палитра base/contrast, contentSize. Иконки: lucide/lightbulb — идея; shield-check — надёжность; settings — адаптация; users — совместная работа; chart-no-axes-combined — развитие; headphones — поддержка. Иконки декоративные, смысл поясняют текстовые заголовки.
+Стиль paragraph/subtitle (в проекте выбрана реализация dot; секция использует стабильное имя subtitle), категория features, коллекция Lucide в Celestial, spacing 20/50/60/70, палитра base/contrast (для Subtitle dot также muted/primary), contentSize. Иконки: lucide/lightbulb — идея; shield-check — надёжность; settings — адаптация; users — совместная работа; chart-no-axes-combined — развитие; headphones — поддержка. Иконки декоративные, смысл поясняют текстовые заголовки. Используется базовое оформление Icon: 2rem/contrast без подложки; варианты Circle и Rounded square не требуются.
 
 ## Перенос и адаптация
 
@@ -27,3 +27,5 @@ Paragraph со style variation subtitle, H2, два Columns по три Column. 
 ## Проверки
 
 2026-10-14: проверены регистрация паттерна и Subtitle, серверный рендер шести иконок, два ряда по три колонки. Мобильная ширина, длинный контент и визуальное редактирование требуют отдельной проверки.
+
+2026-10-14: по явному запросу владельца библиотечный pattern обновлён из wordpress/ после доработки группировки и расстояний. CSS иконок и Subtitle устанавливаются как отдельные зависимости. Тексты остаются универсальными; стиль Rounded square у «Надёжности» на главной снят.
