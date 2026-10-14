@@ -5,8 +5,8 @@
 | Стиль | Рисунок | Контейнер |
 | --- | --- | --- |
 | Plain (по умолчанию) | 2rem, contrast | Без подложки |
-| Circle | 2rem, base | 6rem, primary, круг |
-| Rounded square | 2rem, base | 6rem, primary, радиус 0.5rem |
+| Circle | 2rem, base | 4.5rem, primary, круг |
+| Rounded square | 2rem, base | 4.5rem, primary, радиус 0.5rem |
 
 Размеры находятся в theme.json settings.custom.icon; базовый цвет в styles.blocks.core/icon. CSS assets/blocks/icon.css подключён через wp_enqueue_block_style для редактора и сайта. functions.php регистрирует plain, circle и rounded-square. Пример: `<!-- wp:icon {"icon":"lucide/check","className":"is-style-circle"} /-->`.
 
