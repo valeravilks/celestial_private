@@ -52,6 +52,7 @@ ADR (Architecture Decision Record) — запись о значимом архи
 | [0044](0044-semantic-lucide-icon-selection.md) | Выбор иконок Lucide по смыслу содержимого | Принято | 2026-10-14 |
 | [0045](0045-project-first-library-promotion.md) | Разработка в проекте, перенос в библиотеку по запросу | Принято | 2026-10-14 |
 | [0046](0046-section-heading-group.md) | Общая Group для Subtitle и заголовка секции | Принято | 2026-10-14 |
+| [0047](0047-maintenance-current-rule-audit.md) | Проверка актуальных правил при обслуживании | Принято | 2026-10-14 |
 
 ## Как добавлять решения
 
