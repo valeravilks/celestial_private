@@ -20,13 +20,7 @@ sections/<section>/
 
 - [Footer: Copyright](footer-copyright/description.md) — название проекта и год.
 
-## Переиспользуемые секции
+## Информационные секции
 
-- [Hero: заголовок и две кнопки](hero-intro/description.md) — категория `hero`.
-- [Benefits: три преимущества](benefits-three-columns/description.md) — категория `benefits`.
-- [Features: состав предложения](features-three-columns/description.md) — категория `features`.
-- [Process: три этапа](process-three-steps/description.md) — категория `process`.
-- [FAQ: вопросы и ответы](faq-text/description.md) — категория `faq`.
-- [Contact: приглашение к разговору](contact-intro/description.md) — категория `contact`.
 
 - [Информационная секция: шесть пунктов с иконками](information-six-items/description.md) — категория features.
