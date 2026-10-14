@@ -20,11 +20,11 @@ sections/<section>/
 
 - [Footer: Copyright](footer-copyright/description.md) — название проекта и год.
 
-## Продуктовая страница Celestial
+## Переиспользуемые секции
 
-- [Celestial: первый экран](product-hero/description.md)
-- [Celestial: преимущества](product-benefits/description.md)
-- [Celestial: состав проекта](product-deliverables/description.md)
-- [Celestial: этапы работы](product-process/description.md)
-- [Celestial: вопросы](product-faq/description.md)
-- [Celestial: контакт](product-contact/description.md)
+- [Hero: заголовок и две кнопки](hero-intro/description.md) — категория `hero`.
+- [Benefits: три преимущества](benefits-three-columns/description.md) — категория `benefits`.
+- [Features: состав предложения](features-three-columns/description.md) — категория `features`.
+- [Process: три этапа](process-three-steps/description.md) — категория `process`.
+- [FAQ: вопросы и ответы](faq-text/description.md) — категория `faq`.
+- [Contact: приглашение к разговору](contact-intro/description.md) — категория `contact`.

@@ -35,3 +35,25 @@ function celestial_theme_register_block_styles(): void {
 }
 
 add_action( 'init', 'celestial_theme_register_block_styles' );
+
+/**
+ * Register section categories for reusable patterns.
+ */
+function celestial_theme_register_pattern_categories(): void {
+	$categories = array(
+		'hero'     => __( 'Hero', 'celestial' ),
+		'benefits' => __( 'Benefits', 'celestial' ),
+		'features' => __( 'Features', 'celestial' ),
+		'process'  => __( 'Process', 'celestial' ),
+		'faq'      => __( 'FAQ', 'celestial' ),
+		'contact'  => __( 'Contact', 'celestial' ),
+	);
+
+	foreach ( $categories as $slug => $label ) {
+		if ( ! WP_Block_Pattern_Categories_Registry::get_instance()->is_registered( $slug ) ) {
+			register_block_pattern_category( $slug, array( 'label' => $label ) );
+		}
+	}
+}
+
+add_action( 'init', 'celestial_theme_register_pattern_categories' );

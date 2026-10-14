@@ -45,6 +45,7 @@ ADR (Architecture Decision Record) — запись о значимом архи
 | [0037](0037-internal-design-library.md) | Внутренняя библиотека Blocks и Sections | Принято | 2026-10-13 |
 | [0038](0038-style-variation-alternatives.md) | Альтернативные реализации одной style variation | Принято | 2026-10-13 |
 | [0039](0039-project-source-of-truth.md) | Код проекта как источник истины о выбранных элементах | Принято | 2026-10-13 |
+| [0040](0040-reusable-section-patterns.md) | Универсальные секции независимо от продукта | Принято | 2026-10-14 |
 
 ## Как добавлять решения
 
