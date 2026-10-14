@@ -1,12 +1,18 @@
 <!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
 <main class="wp-block-group">
-  <!-- wp:site-title /-->
+<!-- wp:query-title {"type":"search"} /-->
+<!-- wp:search {"label":"Поиск","buttonText":"Найти"} /-->
   <!-- wp:query {"query":{"inherit":true}} -->
   <div class="wp-block-query">
     <!-- wp:post-template -->
-      <!-- wp:post-title {"isLink":true} /-->
-      <!-- wp:post-content /-->
+      <!-- wp:post-title {"level":2,"isLink":true} /-->
+      <!-- wp:post-excerpt /-->
     <!-- /wp:post-template -->
+    <!-- wp:query-no-results -->
+    <!-- wp:paragraph -->
+    <p>Ничего не найдено.</p>
+    <!-- /wp:paragraph -->
+    <!-- /wp:query-no-results -->
     <!-- wp:query-pagination -->
       <!-- wp:query-pagination-previous /-->
       <!-- wp:query-pagination-next /-->

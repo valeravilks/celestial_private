@@ -33,8 +33,8 @@ WordPress использует файлы темы напрямую. Предв�
 - `style.css` — метаданные темы.
 - `functions.php` — настройки темы, включая отключение встроенных паттернов Core.
 - `theme.json` — настройки блочной темы.
-- `templates/index.html` — композиция из Group и template parts.
-- `parts/main-index.html` — базовое содержимое и Query.
+- `templates/` — базовые index, home, page, single, single-landing-page, archive, search и 404.
+- `parts/` — общие header/footer и части содержимого для разных типов страниц.
 
 [Правила шаблонов и частей](docs/templates.md): templates содержат Group и ссылки на части; содержательные блоки располагаются в parts.
 

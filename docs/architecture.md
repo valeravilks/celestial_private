@@ -38,7 +38,7 @@ Celestial3 — система разработки сайтов на WordPress, 
 | `references/` | Локальные приватные наработки; исключены из Git и передачи; чтение агентом по явному запросу | [ADR-0015](adr/0015-local-private-references.md) |
 | `.gitignore` | Исключение локальных наработок и служебных файлов из Git | [ADR-0015](adr/0015-local-private-references.md) |
 | `wordpress/` | Самостоятельный корень разработки: исходники, конфигурация глобального wp-env и README | [ADR-0004](adr/0004-wordpress-gutenberg-fse.md) |
-| `wordpress/theme/` | Тема Celestial: `style.css`, `functions.php`, `theme.json`, `templates/index.html` | [ADR-0009](adr/0009-separate-theme-and-plugin.md) |
+| `wordpress/theme/` | Тема Celestial: `style.css`, `functions.php`, `theme.json`, `templates/`, `parts/` | [ADR-0009](adr/0009-separate-theme-and-plugin.md) |
 | `wordpress/plugin/` | Плагин Celestial: `celestial.php`, `includes/`, `editor/`, `blocks/` и локальные инструменты | [ADR-0009](adr/0009-separate-theme-and-plugin.md) |
 | `docs/adr/` | Архитектурные решения, их реестр и шаблон | [ADR-0001](adr/0001-incremental-development-through-adrs.md), [ADR-0003](adr/0003-use-adrs-as-single-decision-record.md) |
 | `docs/questions/` | Внутренние отложенные вопросы и идеи, отдельные карточки и реестр | [ADR-0026](adr/0026-open-questions.md) |
@@ -48,6 +48,8 @@ Celestial3 — система разработки сайтов на WordPress, 
 Тема отвечает за оформление, плагин — за возможности, сохраняемые при смене темы. Плагин также может содержать блоки и интерфейс. wp-env подключает локальные каталоги в `wp-content/themes/theme` и `wp-content/plugins/plugin`; отображаемое название обоих компонентов — Celestial.
 
 wp-env устанавливается глобально; проверенная версия — 11.17.0. В корне `wordpress/` нет `package.json`, lock-файла, `.nvmrc` и локальных npm-зависимостей. Инструменты Node.js/npm находятся в `wordpress/plugin/` и описаны в [README плагина](../wordpress/plugin/README.md). Сборка темы не предусмотрена согласно ADR-0013. Параметры WordPress/PHP используют значения по умолчанию wp-env; конкретные версии ядра и PHP пока не закреплены. Инструкции запуска находятся в [README проекта](../wordpress/README.md).
+
+Тема содержит базовые шаблоны index, home, page, single, single-landing-page, archive, search и 404. Все используют общие header/footer и соответствующую content-часть. Списки используют наследуемый Query, отрывки и пагинацию; page/single выводят заголовок и содержимое. Это минимальный каркас без меню и проектных секций, реализованный в рамках ADR-0036.
 
 ## Граница передачи клиенту
 

@@ -322,5 +322,47 @@
         "bottom": "0px"
       }
     }
-  }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    },
+    {
+      "name": "content-index",
+      "title": "Content: index",
+      "area": "uncategorized"
+    },
+    {
+      "name": "content-page",
+      "title": "Content: page",
+      "area": "uncategorized"
+    },
+    {
+      "name": "content-single",
+      "title": "Content: single",
+      "area": "uncategorized"
+    },
+    {
+      "name": "content-archive",
+      "title": "Content: archive",
+      "area": "uncategorized"
+    },
+    {
+      "name": "content-search",
+      "title": "Content: search",
+      "area": "uncategorized"
+    },
+    {
+      "name": "content-404",
+      "title": "Content: 404",
+      "area": "uncategorized"
+    }
+  ]
 }
