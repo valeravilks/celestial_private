@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "title": "Circle",
+  "slug": "circle",
+  "blockTypes": [
+    "core/icon"
+  ],
+  "styles": {
+    "color": {
+      "text": "var:preset|color|base",
+      "background": "var:preset|color|primary"
+    },
+    "border": {
+      "radius": "50%"
+    }
+  }
+}

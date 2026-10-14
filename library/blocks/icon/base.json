@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "settings": {
+    "custom": {
+      "icon": {
+        "size": "2rem",
+        "containerSize": "4.5rem",
+        "roundedRadius": "0.5rem"
+      }
+    }
+  },
+  "styles": {
+    "blocks": {
+      "core/icon": {
+        "color": {
+          "text": "var:preset|color|contrast"
+        }
+      }
+    }
+  }
+}

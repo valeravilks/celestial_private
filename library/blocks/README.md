@@ -20,3 +20,5 @@ paragraph/                       # core/paragraph
 Для проекта выбирается одна реализация `subtitle`. Она использует стабильный slug `subtitle` и класс `is-style-subtitle`. Остальные реализации остаются здесь. Дополнительные файлы добавлять только при необходимости; собственная сборка темы не вводится.
 
 Описание variation создаётся по [шаблону](../templates/style-variation.md), описание её реализации — по [шаблону варианта](../templates/variant.md).
+
+[Icon](icon/README.md) — базовый Plain и варианты Circle и Rounded square; коллекция SVG остаётся в плагине.

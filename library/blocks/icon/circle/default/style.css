@@ -1,0 +1,17 @@
+.wp-block-icon.is-style-circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: var(--wp--custom--icon--container-size);
+	height: var(--wp--custom--icon--container-size);
+	background-color: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--base);
+	border-radius: 50%;
+}
+
+.wp-block-icon.is-style-circle > svg {
+	flex: none;
+	color: var(--wp--preset--color--base);
+	fill: currentColor;
+}

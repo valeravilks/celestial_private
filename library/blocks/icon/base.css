@@ -1,0 +1,10 @@
+.wp-block-icon {
+	width: var(--wp--custom--icon--size);
+	height: var(--wp--custom--icon--size);
+}
+
+.wp-block-icon > svg {
+	display: block;
+	width: var(--wp--custom--icon--size);
+	height: var(--wp--custom--icon--size);
+}

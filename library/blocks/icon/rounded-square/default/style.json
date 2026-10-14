@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "title": "Rounded square",
+  "slug": "rounded-square",
+  "blockTypes": [
+    "core/icon"
+  ],
+  "styles": {
+    "color": {
+      "text": "var:preset|color|base",
+      "background": "var:preset|color|primary"
+    },
+    "border": {
+      "radius": "var(--wp--custom--icon--rounded-radius)"
+    }
+  }
+}
