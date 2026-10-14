@@ -12,9 +12,7 @@
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"},"style":{"spacing":{"blockGap":"var:preset|spacing|50"}}} -->
 <div class="wp-block-group">
 <!-- wp:site-title {"level":0} /-->
-<!-- wp:navigation {"overlayMenu":"mobile","layout":{"type":"flex","justifyContent":"right"}} -->
-<!-- wp:page-list /-->
-<!-- /wp:navigation -->
+<!-- wp:navigation {"overlayMenu":"mobile","layout":{"type":"flex","justifyContent":"right"}} /-->
 </div>
 <!-- /wp:group -->
 </div>
