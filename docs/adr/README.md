@@ -26,7 +26,7 @@ ADR (Architecture Decision Record) — запись о значимом архи
 | [0018](0018-site-palette-only.md) | Выбор цветов только из палитры сайта | [Заменено ADR-0034](0034-pattern-led-editor.md) | 2026-10-13 |
 | [0019](0019-spacing-scale.md) | Единая шкала расстояний FSE-темы | Принято | 2026-10-13 |
 | [0020](0020-site-spacing-only.md) | Выбор расстояний только из шкалы сайта | [Заменено ADR-0034](0034-pattern-led-editor.md) | 2026-10-13 |
-| [0021](0021-typography-system.md) | Типографическая система FSE-темы | Принято | 2026-10-13 |
+| [0021](0021-typography-system.md) | Типографическая система FSE-темы | [Заменено ADR-0055](0055-distinct-heading-scale.md) | 2026-10-13 |
 | [0022](0022-layout-system.md) | Общий layout FSE-темы | Принято | 2026-10-13 |
 | [0023](0023-typography-controls.md) | Ограничение типографических controls редактора | [Заменено ADR-0034](0034-pattern-led-editor.md) | 2026-10-13 |
 | [0024](0024-heading-block-contract.md) | Правила стандартного блока Heading | [Заменено ADR-0034](0034-pattern-led-editor.md) | 2026-10-13 |
@@ -59,6 +59,7 @@ ADR (Architecture Decision Record) — запись о значимом архи
 | [0051](0051-section-spacing-hierarchy.md) | Смысловая группировка и иерархия расстояний в секциях | Принято | 2026-10-14 |
 | [0052](0052-confirm-library-mutations.md) | Точное подтверждение изменений и удаления в библиотеке | Принято | 2026-10-14 |
 | [0054](0054-content-editing-preserves-structure.md) | Редактирование содержимого с сохранением структуры | Принято | 2026-10-14 |
+| [0055](0055-distinct-heading-scale.md) | Более выраженная шкала заголовков | Принято | 2026-10-14 |
 
 ## Как добавлять решения
 

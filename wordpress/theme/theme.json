@@ -190,27 +190,27 @@
         {
           "slug": "lg",
           "name": "LG",
-          "size": "1.25rem"
+          "size": "1.125rem"
         },
         {
           "slug": "xl",
           "name": "XL",
-          "size": "1.5rem"
+          "size": "1.25rem"
         },
         {
           "slug": "2xl",
           "name": "2XL",
-          "size": "1.75rem"
+          "size": "1.5rem"
         },
         {
           "slug": "3xl",
           "name": "3XL",
-          "size": "2rem"
+          "size": "2.25rem"
         },
         {
           "slug": "4xl",
           "name": "4XL",
-          "size": "2.5rem"
+          "size": "3rem"
         }
       ],
       "defaultFontSizes": false,

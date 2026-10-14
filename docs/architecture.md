@@ -19,7 +19,7 @@ Celestial3 — система разработки сайтов на WordPress, 
 | Локальное окружение | `@wordpress/env` (wp-env) | Установлен глобально в окружении Node.js; [.wp-env.json](../wordpress/.wp-env.json) подключает компоненты и активирует тему после запуска | [ADR-0008](adr/0008-local-development-with-wp-env.md), [ADR-0014](adr/0014-plugin-scoped-development-tools.md) |
 | Цветовая система | 10 семантических токенов | Палитра зарегистрирована в theme.json; base — фон, contrast — текст; правила в [документации темы](../wordpress/theme/docs/colors.md) | [ADR-0017](adr/0017-semantic-color-palette.md) |
 | Расстояния | Девять пресетов 10–90 | Фиксированные rem и три clamp; правила в [документации темы](../wordpress/theme/docs/spacing.md) | [ADR-0019](adr/0019-spacing-scale.md) |
-| Типографика | Локальные Ubuntu/Roboto 400/700, семь размеров | Базовый текст Ubuntu/md; токены веса и интервалов, правила H1–H6 | [ADR-0021](adr/0021-typography-system.md) |
+| Типографика | Локальные Ubuntu/Roboto 400/700, семь размеров | Базовый текст Ubuntu/md; токены веса и интервалов, правила H1–H6 | [ADR-0055](adr/0055-distinct-heading-scale.md) |
 | Layout | 1200/1600px | Боковые отступы spacing 40, root-padding-aware alignments | [ADR-0022](adr/0022-layout-system.md) |
 | Стандартные паттерны Core | Отключены | remove_theme_support(core-block-patterns) в functions.php на after_setup_theme | [ADR-0027](adr/0027-disable-core-patterns.md) |
 | Дополнительный CSS блоков | wp_enqueue_block_style на init | Пустой assets/blocks/button.css; механизм не регистрирует новые variations | [ADR-0028](adr/0028-per-block-theme-css.md) |
@@ -112,3 +112,5 @@ ADR-0051 применён к проектному information-six-items и ег�
 Экспериментальная contentOnly-блокировка information-six-items пока остаётся в коде и экземпляре главной, но её эффективность не подтверждена владельцем. ADR-0053 удалён по явному запросу владельца; дальнейшее поведение требует уточнения.
 
 По ADR-0054 принят целевой клиентский режим редактирования содержимого с сохранением структуры блоков и секций; владелец сохраняет возможность сборки. Механизмы блокировки и разделение доступа требуют реализации и проверок. Новый ADR сам по себе не меняет текущий редактор; эксперимент contentOnly не считается подтверждением полной защиты.
+
+По ADR-0055 изменена глобальная шкала H1–H6: 48/36/24/20/18/16px при корневом шрифте 16px, значения хранятся в rem. Базовый текст и sm не изменены; fluid-размеры не добавлены. Library не обновлялась.
