@@ -1,0 +1,4 @@
+.celestial-gallery-centered { text-align: center; }
+.celestial-gallery-centered .wp-block-buttons { justify-content: center; }
+.celestial-gallery-centered > p { max-width: 45rem; margin-inline: auto; }
+.celestial-section-candidate { scroll-margin-top: 3rem; }

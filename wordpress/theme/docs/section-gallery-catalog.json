@@ -1,0 +1,242 @@
+[
+  {
+    "number": 1,
+    "slug": "celestial/content-editorial-intro",
+    "file": "patterns/content-editorial-intro.php",
+    "name": "Content: редакционное вступление",
+    "category": "features",
+    "eyebrow": "Главное о подходе"
+  },
+  {
+    "number": 2,
+    "slug": "celestial/content-image-left",
+    "file": "patterns/content-image-left.php",
+    "name": "Content: изображение слева",
+    "category": "features",
+    "eyebrow": "Пространство для жизни"
+  },
+  {
+    "number": 3,
+    "slug": "celestial/content-image-right",
+    "file": "patterns/content-image-right.php",
+    "name": "Content: изображение справа",
+    "category": "features",
+    "eyebrow": "В деталях"
+  },
+  {
+    "number": 4,
+    "slug": "celestial/content-two-images-captions",
+    "file": "patterns/content-two-images-captions.php",
+    "name": "Content: две фотографии с подписями",
+    "category": "features",
+    "eyebrow": "Визуальный язык"
+  },
+  {
+    "number": 5,
+    "slug": "celestial/content-featured-image",
+    "file": "patterns/content-featured-image.php",
+    "name": "Content: крупное изображение и пояснение",
+    "category": "features",
+    "eyebrow": "Общий взгляд"
+  },
+  {
+    "number": 6,
+    "slug": "celestial/benefits-three-plain",
+    "file": "patterns/benefits-three-plain.php",
+    "name": "Benefits: три простых преимущества",
+    "category": "benefits",
+    "eyebrow": "Почему это удобно"
+  },
+  {
+    "number": 7,
+    "slug": "celestial/benefits-three-circles",
+    "file": "patterns/benefits-three-circles.php",
+    "name": "Benefits: три преимущества с круглыми иконками",
+    "category": "benefits",
+    "eyebrow": "В основе результата"
+  },
+  {
+    "number": 8,
+    "slug": "celestial/benefits-six-cards",
+    "file": "patterns/benefits-six-cards.php",
+    "name": "Benefits: шесть компактных карточек",
+    "category": "benefits",
+    "eyebrow": "Что важно учесть"
+  },
+  {
+    "number": 9,
+    "slug": "celestial/benefits-feature-and-list",
+    "file": "patterns/benefits-feature-and-list.php",
+    "name": "Benefits: главный тезис и список",
+    "category": "benefits",
+    "eyebrow": "Главное преимущество"
+  },
+  {
+    "number": 10,
+    "slug": "celestial/benefits-four-compact",
+    "file": "patterns/benefits-four-compact.php",
+    "name": "Benefits: четыре коротких тезиса",
+    "category": "benefits",
+    "eyebrow": "Коротко о важном"
+  },
+  {
+    "number": 11,
+    "slug": "celestial/services-three-cards",
+    "file": "patterns/services-three-cards.php",
+    "name": "Services: три карточки направлений",
+    "category": "features",
+    "eyebrow": "Возможности"
+  },
+  {
+    "number": 12,
+    "slug": "celestial/services-editorial-rows",
+    "file": "patterns/services-editorial-rows.php",
+    "name": "Services: редакционный список направлений",
+    "category": "features",
+    "eyebrow": "Направления работы"
+  },
+  {
+    "number": 13,
+    "slug": "celestial/services-two-paths",
+    "file": "patterns/services-two-paths.php",
+    "name": "Services: два сценария выбора",
+    "category": "features",
+    "eyebrow": "Как начать"
+  },
+  {
+    "number": 14,
+    "slug": "celestial/process-four-steps",
+    "file": "patterns/process-four-steps.php",
+    "name": "Process: четыре шага в ряд",
+    "category": "process",
+    "eyebrow": "Как это происходит"
+  },
+  {
+    "number": 15,
+    "slug": "celestial/process-vertical-steps",
+    "file": "patterns/process-vertical-steps.php",
+    "name": "Process: вертикальная последовательность",
+    "category": "process",
+    "eyebrow": "Шаг за шагом"
+  },
+  {
+    "number": 16,
+    "slug": "celestial/process-checklist",
+    "file": "patterns/process-checklist.php",
+    "name": "Process: подготовка и чек-лист",
+    "category": "process",
+    "eyebrow": "До начала работы"
+  },
+  {
+    "number": 17,
+    "slug": "celestial/comparison-two-approaches",
+    "file": "patterns/comparison-two-approaches.php",
+    "name": "Comparison: два подхода",
+    "category": "features",
+    "eyebrow": "Сравним варианты"
+  },
+  {
+    "number": 18,
+    "slug": "celestial/content-scope-two-columns",
+    "file": "patterns/content-scope-two-columns.php",
+    "name": "Content: состав результата",
+    "category": "features",
+    "eyebrow": "Что входит"
+  },
+  {
+    "number": 19,
+    "slug": "celestial/faq-accordion",
+    "file": "patterns/faq-accordion.php",
+    "name": "FAQ: раскрывающиеся вопросы",
+    "category": "faq",
+    "eyebrow": "Частые вопросы"
+  },
+  {
+    "number": 20,
+    "slug": "celestial/faq-two-column-answers",
+    "file": "patterns/faq-two-column-answers.php",
+    "name": "FAQ: открытые ответы в двух колонках",
+    "category": "faq",
+    "eyebrow": "Полезно знать"
+  },
+  {
+    "number": 21,
+    "slug": "celestial/testimonial-editorial",
+    "file": "patterns/testimonial-editorial.php",
+    "name": "Testimonials: редакционная цитата",
+    "category": "features",
+    "eyebrow": "Пример отзыва"
+  },
+  {
+    "number": 22,
+    "slug": "celestial/testimonials-two-cards",
+    "file": "patterns/testimonials-two-cards.php",
+    "name": "Testimonials: две карточки отзывов",
+    "category": "features",
+    "eyebrow": "Опыт клиентов"
+  },
+  {
+    "number": 23,
+    "slug": "celestial/case-problem-solution",
+    "file": "patterns/case-problem-solution.php",
+    "name": "Case: задача и решение",
+    "category": "features",
+    "eyebrow": "Разбор проекта"
+  },
+  {
+    "number": 24,
+    "slug": "celestial/audience-three-scenarios",
+    "file": "patterns/audience-three-scenarios.php",
+    "name": "Audience: три сценария использования",
+    "category": "features",
+    "eyebrow": "Для кого"
+  },
+  {
+    "number": 25,
+    "slug": "celestial/support-two-levels",
+    "file": "patterns/support-two-levels.php",
+    "name": "Support: информация и помощь",
+    "category": "features",
+    "eyebrow": "После запуска"
+  },
+  {
+    "number": 26,
+    "slug": "celestial/cta-centered",
+    "file": "patterns/cta-centered.php",
+    "name": "CTA: центрированный призыв",
+    "category": "contact",
+    "eyebrow": "Следующий шаг"
+  },
+  {
+    "number": 27,
+    "slug": "celestial/cta-split-action",
+    "file": "patterns/cta-split-action.php",
+    "name": "CTA: текст и действие в двух колонках",
+    "category": "contact",
+    "eyebrow": "Есть идея?"
+  },
+  {
+    "number": 28,
+    "slug": "celestial/cta-panel",
+    "file": "patterns/cta-panel.php",
+    "name": "CTA: акцентная панель",
+    "category": "contact",
+    "eyebrow": "Время действовать"
+  },
+  {
+    "number": 29,
+    "slug": "celestial/resources-three-links",
+    "file": "patterns/resources-three-links.php",
+    "name": "Resources: три полезных материала",
+    "category": "features",
+    "eyebrow": "Перед началом"
+  },
+  {
+    "number": 30,
+    "slug": "celestial/contact-brief",
+    "file": "patterns/contact-brief.php",
+    "name": "Contact: приглашение и список вводных",
+    "category": "contact",
+    "eyebrow": "Давайте обсудим"
+  }
+]
