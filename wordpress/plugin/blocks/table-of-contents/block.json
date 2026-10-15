@@ -7,8 +7,14 @@
   "category": "widgets",
   "description": "Оглавление текущей записи по заголовкам H2 и H3.",
   "textdomain": "celestial",
-  "usesContext": ["postId", "postType"],
-  "supports": {"html": false},
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "supports": {
+    "html": false
+  },
   "editorScript": "file:./index.js",
-  "render": "file:./render.php"
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
 }

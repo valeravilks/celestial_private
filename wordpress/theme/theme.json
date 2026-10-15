@@ -352,11 +352,13 @@
       },
       "celestial/table-of-contents": {
         "typography": {
-          "fontSize": "var:preset|font-size|sm",
-          "lineHeight": "var:custom|line-height|snug"
+          "fontFamily": "var:preset|font-family|ubuntu",
+          "fontSize": "var:preset|font-size|md",
+          "fontWeight": "var:custom|font-weight|regular",
+          "lineHeight": "var:custom|line-height|normal"
         },
         "color": {
-          "text": "var:preset|color|muted"
+          "text": "var:preset|color|contrast"
         },
         "elements": {
           "link": {
