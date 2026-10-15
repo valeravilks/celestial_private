@@ -1,0 +1,70 @@
+/* Page-specific composition. Global palette, typography and spacing tokens stay intact. */
+.wardrobe-header { padding: var(--wp--preset--spacing--50) var(--wp--preset--spacing--40); }
+.wardrobe-header .wp-block-columns { align-items:center; margin-block:0; }
+.wardrobe-header .wp-block-site-title { font-size:var(--wp--preset--font-size--2-xl); font-weight:700; letter-spacing:-.025em; }
+.wardrobe-header .wp-block-site-title a { text-decoration:none; }
+.wardrobe-header .wardrobe-brand-note { font-size:var(--wp--preset--font-size--sm); color:var(--wp--preset--color--muted); margin:0; }
+.wardrobe-header .wp-block-navigation { font-size:var(--wp--preset--font-size--sm); }
+.wardrobe-header .wp-block-navigation__container { gap:var(--wp--preset--spacing--50); }
+.wardrobe-header .wp-block-navigation-item:last-child > a { font-weight:700; text-underline-offset:.3em; text-decoration:underline; }
+.wardrobe-landing { isolation:isolate; }
+.wardrobe-landing .wardrobe-section { box-sizing:border-box; position:relative; scroll-margin-top:var(--wp--preset--spacing--60); padding-inline:var(--wp--preset--spacing--40); }
+.wardrobe-landing .wardrobe-section__intro { max-width:var(--wp--style--global--content-size); }
+.wardrobe-landing .wp-block-columns { margin-block:0; }
+.wardrobe-landing .wp-block-column { min-width:0; }
+.wardrobe-landing .wardrobe-section > .wardrobe-section__content { margin-top:var(--wp--preset--spacing--60); }
+.wardrobe-landing .wardrobe-dark .is-style-subtitle { color:var(--wp--preset--color--base); }
+.wardrobe-landing .wardrobe-dark .is-style-subtitle::before { background:var(--wp--preset--color--accent); }
+.wardrobe-landing .wardrobe-dark .wp-block-icon { color:var(--wp--preset--color--base); }
+.wardrobe-landing .wardrobe-dark :is(h1,h2,h3) { color:inherit; }
+.wardrobe-landing .wardrobe-dark a:focus-visible { outline:3px solid var(--wp--preset--color--base); outline-offset:4px; }
+.wardrobe-hero {
+ background-image:linear-gradient(90deg,rgba(37,43,37,.97) 0%,rgba(37,43,37,.92) 38%,rgba(37,43,37,.62) 60%,rgba(37,43,37,.06) 100%),url('../images/wardrobe/wardrobe-light.jpg');
+ background-size:cover; background-position:center;
+ min-height:660px; display:flex; flex-direction:column; justify-content:center;
+}
+.wardrobe-hero > .wp-block-group { width:100%; margin-inline:auto; }
+.wardrobe-hero .wardrobe-section__intro > * { max-width:580px; }
+.wardrobe-hero .wardrobe-section__content > p { max-width:475px; }
+.wardrobe-hero .wp-block-heading { letter-spacing:-.03em; }
+.wardrobe-hero .wp-block-buttons { margin-top:var(--wp--preset--spacing--60); }
+.wardrobe-hero .is-style-outline .wp-block-button__link { color:var(--wp--preset--color--base); }
+.wardrobe-hero__notes { display:flex; flex-wrap:wrap; gap:var(--wp--preset--spacing--50); font-size:var(--wp--preset--font-size--sm); margin-top:var(--wp--preset--spacing--60); }
+.wardrobe-hero__notes p { margin:0; }
+.wardrobe-hero__notes p + p { padding-inline-start:var(--wp--preset--spacing--50); border-inline-start:1px solid rgba(250,248,243,.35); }
+.wardrobe-benefits { padding-inline:var(--wp--preset--spacing--40); }
+.wardrobe-benefits .wp-block-columns { margin-top:var(--wp--preset--spacing--60); }
+.wardrobe-benefits .wp-block-icon { margin-bottom:var(--wp--preset--spacing--50); }
+.wardrobe-landing .wardrobe-dark .is-style-caption { color:var(--wp--preset--color--base); }
+.wardrobe-solutions .wp-block-heading { margin-top:var(--wp--preset--spacing--20); }
+.wardrobe-grid-background { background-image:repeating-linear-gradient(90deg,transparent 0,transparent 119px,rgba(52,70,56,.045) 119px,rgba(52,70,56,.045) 120px); }
+.wardrobe-detail { border-top:1px solid rgba(52,70,56,.18); padding-top:var(--wp--preset--spacing--50); }
+.wardrobe-step-number { color:var(--wp--preset--color--secondary); font-size:var(--wp--preset--font-size--sm); font-weight:700; letter-spacing:.08em; }
+.wardrobe-materials { background-image:linear-gradient(135deg,rgba(0,0,0,.08),transparent 60%); }
+.wardrobe-swatch { min-height:180px; border:1px solid rgba(250,248,243,.24); }
+.wardrobe-swatch--wood { background:repeating-linear-gradient(92deg,rgba(37,43,37,.12) 0,transparent 2px,transparent 18px),linear-gradient(110deg,var(--wp--preset--color--accent),var(--wp--preset--color--secondary)); }
+.wardrobe-swatch--matte { background:linear-gradient(135deg,var(--wp--preset--color--surface),var(--wp--preset--color--muted)); }
+.wardrobe-swatch--glass { background:linear-gradient(120deg,var(--wp--preset--color--muted) 0,var(--wp--preset--color--surface) 44%,var(--wp--preset--color--base) 47%,var(--wp--preset--color--muted) 49%,var(--wp--preset--color--contrast) 100%); }
+.wardrobe-process .wp-block-column { border-top:1px solid rgba(52,70,56,.25); padding-top:var(--wp--preset--spacing--50); }
+.wardrobe-request { background-image:repeating-linear-gradient(90deg,transparent,transparent 119px,rgba(250,248,243,.04) 119px,rgba(250,248,243,.04) 120px); }
+.wardrobe-form-panel { color:var(--wp--preset--color--contrast); box-shadow:0 12px 36px rgba(0,0,0,.12); }
+.wardrobe-footer { padding:var(--wp--preset--spacing--60) var(--wp--preset--spacing--40); border-top:1px solid rgba(52,70,56,.15); }
+.wardrobe-footer .wp-block-columns { margin:0; }
+.wardrobe-footer p { margin-block:0 var(--wp--preset--spacing--20); }
+.wardrobe-footer a { color:var(--wp--preset--color--contrast); text-underline-offset:.3em; }
+@media (max-width:781px) {
+ .wardrobe-header .wp-block-columns { flex-wrap:nowrap!important; gap:var(--wp--preset--spacing--20); }
+ .wardrobe-header .wp-block-column:first-child { flex-basis:75%!important; }
+ .wardrobe-header .wp-block-column:last-child { flex-basis:25%!important; }
+ .wardrobe-hero { min-height:600px; background-position:60% center; background-image:linear-gradient(90deg,rgba(37,43,37,.96),rgba(37,43,37,.7)),url('../images/wardrobe/wardrobe-light.jpg'); }
+ .wardrobe-hero .wp-block-buttons { align-items:flex-start; }
+ .wardrobe-hero__notes { gap:var(--wp--preset--spacing--30); }
+ .wardrobe-hero__notes p + p { padding-inline-start:0; border:0; }
+ .wardrobe-landing .wp-block-columns { gap:var(--wp--preset--spacing--60); }
+ .wardrobe-form-panel { padding:var(--wp--preset--spacing--50)!important; }
+}
+.wardrobe-landing .wardrobe-hero .wp-block-button.is-style-outline .wp-block-button__link {
+ color:var(--wp--preset--color--base);
+ border-color:var(--wp--preset--color--base);
+ background:transparent;
+}

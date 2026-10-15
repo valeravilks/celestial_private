@@ -1,0 +1,7 @@
+.wardrobe-faq .wp-block-accordion-item { border-top:1px solid rgba(52,70,56,.2); }
+.wardrobe-faq .wp-block-accordion-item:last-child { border-bottom:1px solid rgba(52,70,56,.2); }
+.wardrobe-faq .wp-block-accordion-heading { margin:0; font-size:var(--wp--preset--font-size--md); line-height:var(--wp--custom--line-height--snug); }
+.wardrobe-faq .wp-block-accordion-heading__toggle { padding-block:var(--wp--preset--spacing--50); padding-inline:0; color:inherit; font-family:inherit; font-size:inherit; font-weight:700; text-align:start; }
+.wardrobe-faq .wp-block-accordion-heading__toggle:focus-visible { outline:2px solid var(--wp--preset--color--primary); outline-offset:3px; }
+.wardrobe-faq .wp-block-accordion-panel { padding-bottom:var(--wp--preset--spacing--50); }
+.wardrobe-faq .wp-block-accordion-panel p { margin:0; color:var(--wp--preset--color--muted); }

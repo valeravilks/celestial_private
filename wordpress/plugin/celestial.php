@@ -12,6 +12,8 @@ require_once __DIR__ . '/includes/landing-pages/index.php';
 require_once __DIR__ . '/includes/editor-policy/index.php';
 require_once __DIR__ . '/includes/icons/index.php';
 require_once __DIR__ . '/includes/table-of-contents/index.php';
+require_once __DIR__ . '/includes/inquiries/index.php';
+require_once __DIR__ . '/includes/page-metadata/index.php';
 
 /**
  * Load shared editor extensions when their build is available.

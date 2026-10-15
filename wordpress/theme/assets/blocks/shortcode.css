@@ -1,0 +1,10 @@
+.celestial-inquiry-form { display:grid; gap:var(--wp--preset--spacing--50); color:var(--wp--preset--color--contrast); }
+.celestial-inquiry-form label { display:grid; gap:var(--wp--preset--spacing--20); font-weight:700; }
+.celestial-inquiry-form__optional { font-weight:400; font-size:var(--wp--preset--font-size--sm); }
+.celestial-inquiry-form :is(input,textarea) { box-sizing:border-box; width:100%; padding:var(--wp--preset--spacing--30) var(--wp--preset--spacing--40); font:inherit; color:inherit; background:var(--wp--preset--color--base); border:1px solid var(--wp--preset--color--muted); border-radius:0; }
+.celestial-inquiry-form textarea { resize:vertical; }
+.celestial-inquiry-form button { padding:var(--wp--preset--spacing--40) var(--wp--preset--spacing--50); background:var(--wp--preset--color--primary); color:var(--wp--preset--color--base); font:inherit; font-weight:700; cursor:pointer; border:0; }
+.celestial-inquiry-form :is(input,textarea,button):focus-visible { outline:3px solid var(--wp--preset--color--primary); outline-offset:3px; }
+.celestial-inquiry-form__note { margin:0; font-size:var(--wp--preset--font-size--sm); color:var(--wp--preset--color--muted); }
+.celestial-inquiry-form__notice { padding:var(--wp--preset--spacing--40); background:var(--wp--preset--color--surface); margin:0; }
+.celestial-inquiry-form .celestial-inquiry-form__trap { display:none; }

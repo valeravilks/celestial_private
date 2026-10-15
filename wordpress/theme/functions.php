@@ -18,7 +18,7 @@ add_action( 'after_setup_theme', 'celestial_disable_core_patterns' );
  * Attach theme CSS files to their corresponding Core blocks.
  */
 function celestial_theme_register_block_styles(): void {
-	$styled_blocks = array( 'button', 'paragraph', 'icon', 'image', 'html' );
+	$styled_blocks = array( 'button', 'paragraph', 'icon', 'image', 'html', 'group', 'accordion', 'shortcode' );
 
 	foreach ( $styled_blocks as $block_name ) {
 		$path = "assets/blocks/{$block_name}.css";
@@ -85,3 +85,9 @@ function celestial_theme_register_toc_styles(): void {
 	) );
 }
 add_action( 'init', 'celestial_theme_register_toc_styles' );
+
+/** Register small supporting text independently of Subtitle. */
+function celestial_theme_register_caption_style(): void {
+	register_block_style( 'core/paragraph', array( 'name' => 'caption', 'label' => __( 'Caption', 'celestial' ) ) );
+}
+add_action( 'init', 'celestial_theme_register_caption_style' );

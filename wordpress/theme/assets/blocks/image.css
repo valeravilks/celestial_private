@@ -1,2 +1,6 @@
 .wp-block-image img{display:block;width:100%;height:auto;}
 .wp-block-image.furniture-demo-media img{aspect-ratio:4/3;object-fit:cover;}
+.wardrobe-photo img { width:100%; aspect-ratio:4/3; object-fit:cover; }
+.wardrobe-solutions .wardrobe-photo img { aspect-ratio:4/5; }
+.wardrobe-photo--tall img { aspect-ratio:4/5; object-position:40% center; }
+@media (max-width:781px) { .wardrobe-solutions .wardrobe-photo img,.wardrobe-photo--tall img { aspect-ratio:4/3; } }
