@@ -6,7 +6,8 @@
     "name": "Content: редакционное вступление",
     "category": "features",
     "eyebrow": "Главное о подходе",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 2,
@@ -15,7 +16,8 @@
     "name": "Content: изображение слева",
     "category": "features",
     "eyebrow": "Пространство для жизни",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 3,
@@ -24,7 +26,8 @@
     "name": "Content: изображение справа",
     "category": "features",
     "eyebrow": "В деталях",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 4,
@@ -33,7 +36,8 @@
     "name": "Content: две фотографии с подписями",
     "category": "features",
     "eyebrow": "Визуальный язык",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 5,
@@ -42,7 +46,8 @@
     "name": "Content: крупное изображение и пояснение",
     "category": "features",
     "eyebrow": "Общий взгляд",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 6,
@@ -51,7 +56,8 @@
     "name": "Benefits: три простых преимущества",
     "category": "benefits",
     "eyebrow": "Почему это удобно",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 7,
@@ -60,7 +66,8 @@
     "name": "Benefits: три преимущества с круглыми иконками",
     "category": "benefits",
     "eyebrow": "В основе результата",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 8,
@@ -69,7 +76,8 @@
     "name": "Benefits: шесть компактных карточек",
     "category": "benefits",
     "eyebrow": "Что важно учесть",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 9,
@@ -78,7 +86,8 @@
     "name": "Benefits: главный тезис и список",
     "category": "benefits",
     "eyebrow": "Главное преимущество",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 10,
@@ -87,7 +96,8 @@
     "name": "Benefits: четыре коротких тезиса",
     "category": "benefits",
     "eyebrow": "Коротко о важном",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 11,
@@ -96,7 +106,8 @@
     "name": "Services: три карточки направлений",
     "category": "features",
     "eyebrow": "Возможности",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 12,
@@ -105,7 +116,8 @@
     "name": "Services: редакционный список направлений",
     "category": "features",
     "eyebrow": "Направления работы",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 13,
@@ -114,7 +126,8 @@
     "name": "Services: два сценария выбора",
     "category": "features",
     "eyebrow": "Как начать",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 14,
@@ -123,7 +136,8 @@
     "name": "Process: четыре шага в ряд",
     "category": "process",
     "eyebrow": "Как это происходит",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 15,
@@ -132,7 +146,8 @@
     "name": "Process: вертикальная последовательность",
     "category": "process",
     "eyebrow": "Шаг за шагом",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 16,
@@ -141,7 +156,8 @@
     "name": "Process: подготовка и чек-лист",
     "category": "process",
     "eyebrow": "До начала работы",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 17,
@@ -150,7 +166,8 @@
     "name": "Comparison: два подхода",
     "category": "features",
     "eyebrow": "Сравним варианты",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 18,
@@ -159,7 +176,8 @@
     "name": "Content: состав результата",
     "category": "features",
     "eyebrow": "Что входит",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 19,
@@ -168,7 +186,8 @@
     "name": "FAQ: раскрывающиеся вопросы",
     "category": "faq",
     "eyebrow": "Частые вопросы",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 20,
@@ -177,7 +196,8 @@
     "name": "FAQ: открытые ответы в двух колонках",
     "category": "faq",
     "eyebrow": "Полезно знать",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 21,
@@ -186,7 +206,8 @@
     "name": "Testimonials: редакционная цитата",
     "category": "features",
     "eyebrow": "Пример отзыва",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 22,
@@ -195,7 +216,8 @@
     "name": "Testimonials: две карточки отзывов",
     "category": "features",
     "eyebrow": "Опыт клиентов",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 23,
@@ -204,7 +226,8 @@
     "name": "Case: задача и решение",
     "category": "features",
     "eyebrow": "Разбор проекта",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 24,
@@ -213,7 +236,8 @@
     "name": "Audience: три сценария использования",
     "category": "features",
     "eyebrow": "Для кого",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 25,
@@ -222,7 +246,8 @@
     "name": "Support: информация и помощь",
     "category": "features",
     "eyebrow": "После запуска",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 26,
@@ -231,7 +256,8 @@
     "name": "CTA: центрированный призыв",
     "category": "contact",
     "eyebrow": "Следующий шаг",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 27,
@@ -240,7 +266,8 @@
     "name": "CTA: текст и действие в двух колонках",
     "category": "contact",
     "eyebrow": "Есть идея?",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 28,
@@ -249,7 +276,8 @@
     "name": "CTA: акцентная панель",
     "category": "contact",
     "eyebrow": "Время действовать",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 29,
@@ -258,7 +286,8 @@
     "name": "Resources: три полезных материала",
     "category": "features",
     "eyebrow": "Перед началом",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 30,
@@ -267,7 +296,8 @@
     "name": "Contact: приглашение и список вводных",
     "category": "contact",
     "eyebrow": "Давайте обсудим",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 31,
@@ -276,7 +306,8 @@
     "name": "CTA: тёмный центрированный призыв",
     "category": "contact",
     "eyebrow": "Следующий шаг",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 32,
@@ -285,7 +316,8 @@
     "name": "CTA: центрированный призыв на primary",
     "category": "contact",
     "eyebrow": "Начнём с разговора",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 33,
@@ -294,7 +326,8 @@
     "name": "CTA: тёмная редакционная композиция",
     "category": "contact",
     "eyebrow": "Есть задача?",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 34,
@@ -303,7 +336,8 @@
     "name": "CTA: тёмный призыв с чек-листом",
     "category": "contact",
     "eyebrow": "Перед стартом",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 35,
@@ -312,7 +346,8 @@
     "name": "CTA: тёмный призыв с фотографией",
     "category": "contact",
     "eyebrow": "От идеи к форме",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 36,
@@ -321,7 +356,8 @@
     "name": "CTA: тёмная панель на светлом фоне",
     "category": "contact",
     "eyebrow": "Приглашение к разговору",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 37,
@@ -330,7 +366,8 @@
     "name": "CTA: два пути на тёмном фоне",
     "category": "contact",
     "eyebrow": "Как вам удобнее",
-    "visible_on_home": true
+    "visible_on_home": false,
+    "source_in_theme": false
   },
   {
     "number": 38,
@@ -339,6 +376,7 @@
     "name": "CTA: спокойный призыв с одной кнопкой",
     "category": "contact",
     "eyebrow": "Продолжим?",
-    "visible_on_home": false
+    "visible_on_home": false,
+    "source_in_theme": false
   }
 ]

@@ -18,7 +18,7 @@ add_action( 'after_setup_theme', 'celestial_disable_core_patterns' );
  * Attach theme CSS files to their corresponding Core blocks.
  */
 function celestial_theme_register_block_styles(): void {
-	$styled_blocks = array( 'button', 'paragraph', 'icon', 'image', 'html', 'group' );
+	$styled_blocks = array( 'button', 'paragraph', 'icon', 'image', 'html' );
 
 	foreach ( $styled_blocks as $block_name ) {
 		$path = "assets/blocks/{$block_name}.css";
