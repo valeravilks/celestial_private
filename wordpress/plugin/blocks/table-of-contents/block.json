@@ -1,0 +1,14 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "celestial/table-of-contents",
+  "version": "0.1.0",
+  "title": "Table of Contents",
+  "category": "widgets",
+  "description": "Оглавление текущей записи по заголовкам H2 и H3.",
+  "textdomain": "celestial",
+  "usesContext": ["postId", "postType"],
+  "supports": {"html": false},
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

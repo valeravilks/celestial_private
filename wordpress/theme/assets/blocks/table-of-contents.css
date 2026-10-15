@@ -1,0 +1,11 @@
+.wp-block-celestial-table-of-contents .celestial-toc__title {
+ font-weight: var(--wp--custom--font-weight--bold);
+ color: var(--wp--preset--color--contrast);
+ margin: 0 0 var(--wp--preset--spacing--40);
+}
+.wp-block-celestial-table-of-contents .celestial-toc__list { list-style: none; padding: 0; margin: 0; }
+.wp-block-celestial-table-of-contents .celestial-toc__item + .celestial-toc__item { margin-top: var(--wp--preset--spacing--30); }
+.wp-block-celestial-table-of-contents .celestial-toc__item--level-3 { padding-inline-start: var(--wp--preset--spacing--40); }
+.wp-block-celestial-table-of-contents a { text-decoration: none; overflow-wrap: anywhere; }
+.wp-block-celestial-table-of-contents a:hover { text-decoration: underline; }
+.wp-block-celestial-table-of-contents a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }

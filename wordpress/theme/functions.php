@@ -75,3 +75,13 @@ function celestial_theme_register_icon_styles(): void {
 	register_block_style( 'core/icon', array( 'name' => 'rounded-square', 'label' => __( 'Rounded square', 'celestial' ) ) );
 }
 add_action( 'init', 'celestial_theme_register_icon_styles' );
+
+/** Attach the Table of Contents presentation to its block. */
+function celestial_theme_register_toc_styles(): void {
+	wp_enqueue_block_style( 'celestial/table-of-contents', array(
+		'handle' => 'celestial-table-of-contents',
+		'src' => get_theme_file_uri( 'assets/blocks/table-of-contents.css' ),
+		'path' => get_theme_file_path( 'assets/blocks/table-of-contents.css' ),
+	) );
+}
+add_action( 'init', 'celestial_theme_register_toc_styles' );

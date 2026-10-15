@@ -349,6 +349,25 @@
         "color": {
           "text": "var:preset|color|contrast"
         }
+      },
+      "celestial/table-of-contents": {
+        "typography": {
+          "fontSize": "var:preset|font-size|sm",
+          "lineHeight": "var:custom|line-height|snug"
+        },
+        "color": {
+          "text": "var:preset|color|muted"
+        },
+        "elements": {
+          "link": {
+            "color": {
+              "text": "var:preset|color|contrast"
+            }
+          }
+        },
+        "spacing": {
+          "blockGap": "var:preset|spacing|30"
+        }
       }
     }
   },
