@@ -10,7 +10,7 @@
 button → core/button → assets/blocks/button.css → celestial-button
 ```
 
-В списке подключены `button`, `paragraph` и `icon`. Файл `assets/blocks/button.css` пустой: это точка расширения без новых визуальных правил. `group` из старого проекта не подключён, пока у него нет собственного CSS-файла.
+В списке подключены `button`, `paragraph`, `icon`, `image`, `html`, `group`, `accordion` и `shortcode`. Файл `assets/blocks/button.css` остаётся минимальной точкой расширения. Для каждого имени должен существовать соответствующий CSS-файл; актуальный список находится в functions.php.
 
 ## Добавление блока
 
@@ -41,16 +41,8 @@ button → core/button → assets/blocks/button.css → celestial-button
 
 Это пример для будущей реализации: сейчас `button-link` не зарегистрирован, правило не добавлено в `button.css`. Не дублировать в CSS цвета, размеры и отступы, которые уже корректно определены JSON. При анимации учитывать `prefers-reduced-motion`.
 
-Стиль Paragraph Subtitle зарегистрирован с именем subtitle. assets/blocks/paragraph.css задаёт выбранное оформление: sm, bold, wide, snug; текст цвета muted и декоративная круглая точка primary перед ним. Размер точки и промежуток — spacing 20. Паттерн «Features: шесть пунктов с иконками» использует этот стиль и шесть декоративных Lucide.
+## Установленные стили
 
-В information-six-items Subtitle и H2 объединены Group с blockGap spacing 20; до колонок используется spacing 50. Это правило композиции паттерна, а не глобальный отступ текстового стиля.
+[Paragraph](blocks/paragraph.md) описывает Subtitle и Caption; [Icon](blocks/icon.md) — Plain, Circle и Rounded square. Базовое оформление Caption находится в theme.json, CSS Subtitle и Icon привязан к соответствующим блокам. [Композиция секций](sections.md) задаёт группировку и интервалы независимо от стиля Paragraph.
 
-[Оформление Icon](blocks/icon.md): Plain, Circle и Rounded square; готовый CSS assets/blocks/icon.css.
-
-В information-six-items оба ряда колонок объединены отдельной Group содержимого: gap между рядами spacing 50. Корневая секция содержит вводную Group и Group контента; иерархия — spacing 20 < spacing 50 ≤ padding spacing 70.
-
-В information-six-items межгрупповой gap увеличен до spacing 60 (2rem): вводная группа сохраняет 20, расстояние между рядами — 50, padding секции — 70.
-
-Subtitle отображается прописными буквами через text-transform: uppercase. Сохранённый текст не преобразуется: автор может вводить его в любом регистре.
-
-Корневая Group information-six-items имеет templateLock contentOnly: в обычном режиме редактируется содержимое без добавления и перестановки вложенных блоков. Уже вставленные экземпляры требуют отдельного обновления; клиентские права доступа этим не ограничиваются.
+У текущего лендинга дополнительное оформление находится в group.css, image.css, accordion.css и shortcode.css. Список подключений сверять с functions.php. [FAQ использует Accordion](blocks/accordion.md). Файловый information-six-items удалён вместе с прежней подборкой; исторические параметры его Group не описывают текущую главную. Общие ограничения редактора не гарантируют блокировку структуры — см. [политику](editor-controls.md).

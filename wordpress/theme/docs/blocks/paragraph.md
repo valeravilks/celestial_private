@@ -79,8 +79,12 @@ Paragraph block
 
 ## Текущая реализация
 
-Типографика наследуется из общих правил темы. Настройки дизайна скрыты глобально по [политике редактора](../editor-controls.md). Цвет текста по умолчанию contrast; блоковые overrides не используются. Зарегистрированы Subtitle и Caption.
+Типографика наследуется из общих правил темы. Настройки дизайна скрыты глобально по [политике редактора](../editor-controls.md). Цвет текста по умолчанию contrast; settings.blocks overrides для controls не используются, оформление Caption задано в styles.blocks. Зарегистрированы Subtitle и Caption.
 
 ## Caption
 
 Style variation `caption` (`is-style-caption`) предназначена для небольших вспомогательных подписей. Использует sm (0.875rem), regular, normal и muted через styles.blocks.core/paragraph.variations.caption в theme.json. Регистр обычный, декоративной точки нет. На тёмной поверхности композиция задаёт читаемый цвет base. Caption не заменяет основной текст или штатный figcaption изображения; расстояния задаёт композиция.
+
+## Subtitle
+
+Зарегистрированный стиль `subtitle`, класс is-style-subtitle. Текущая реализация — sm/bold/wide/snug, muted и декоративная точка primary (размер и промежуток spacing 20) через assets/blocks/paragraph.css. CSS text-transform: uppercase сохраняет вид независимо от регистра введённого текста; сам текст не преобразуется. Subtitle группируется с заголовком по [правилам секций](../sections.md), не задаёт глобальный отступ до содержимого.

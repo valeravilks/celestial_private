@@ -18,7 +18,7 @@ WordPress использует файлы темы напрямую. Предв�
 
 ## Файлы темы
 
-[Гайд по CSS блоков](docs/block-styles.md) описывает подключение дополнительных стилей через `wp_enqueue_block_style`. Пустой `assets/blocks/button.css` служит примером; новые визуальные варианты пока не зарегистрированы.
+[Гайд по CSS блоков](docs/block-styles.md) описывает подключение дополнительных стилей через `wp_enqueue_block_style`. `assets/blocks/button.css` служит минимальным примером; зарегистрированные стили Paragraph и Icon описаны в руководствах блоков.
 
 [Цветовая система](docs/colors.md) описывает 10 токенов, начальную палитру и правила контраста. Основной фон — `base`, основной текст — `contrast`.
 
@@ -33,7 +33,7 @@ WordPress использует файлы темы напрямую. Предв�
 - `style.css` — метаданные темы.
 - `functions.php` — настройки темы, включая отключение встроенных паттернов Core.
 - `theme.json` — настройки блочной темы.
-- `templates/` — базовые index, home, page, single, single-landing-page, archive, search и 404.
+- `templates/` — front-page, index, home, page, single, single-landing-page, archive, search и 404.
 - `parts/` — общие header/footer и части содержимого для разных типов страниц.
 
 [Правила шаблонов и частей](docs/templates.md): templates содержат Group и ссылки на части; содержательные блоки располагаются в parts.
@@ -42,4 +42,6 @@ WordPress использует файлы темы напрямую. Предв�
 
 [Общая политика редактора](docs/editor-controls.md): страницы собираются из готовых паттернов; ручные controls дизайна, включая padding и gap, сейчас скрыты.
 
-[Продуктовая страница Celestial](docs/celestial-page.md) — редактируемый черновик; в каталоге patterns оставлены Header, Footer и информационная секция с шестью иконками.
+[Текущая главная «Форма»](docs/wardrobe-landing.md) — тестовый лендинг шкафов-купе. Файловые patterns темы удалены; header/footer содержат блоки непосредственно в parts. Старые материалы Celestial и подборки в docs/ сохранены как исторические снимки, а не описание текущей главной.
+
+[Композиция секций](docs/sections.md), [Accordion для FAQ](docs/blocks/accordion.md) и [общие стандарты разработки](../docs/coding-standards.md).
