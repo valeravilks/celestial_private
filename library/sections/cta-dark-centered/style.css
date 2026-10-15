@@ -1,0 +1,5 @@
+.celestial-content-centered { text-align: center; }
+.celestial-content-centered .wp-block-buttons { justify-content: center; }
+.celestial-content-centered > p { max-width: 45rem; margin-inline: auto; }
+.celestial-section-dark .is-style-subtitle { color: var(--wp--preset--color--base); }
+.celestial-section-dark .is-style-subtitle::before { background-color: var(--wp--preset--color--accent); }
