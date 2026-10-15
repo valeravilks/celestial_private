@@ -238,5 +238,69 @@
     "name": "Contact: приглашение и список вводных",
     "category": "contact",
     "eyebrow": "Давайте обсудим"
+  },
+  {
+    "number": 31,
+    "slug": "celestial/cta-dark-centered",
+    "file": "patterns/cta-dark-centered.php",
+    "name": "CTA: тёмный центрированный призыв",
+    "category": "contact",
+    "eyebrow": "Следующий шаг"
+  },
+  {
+    "number": 32,
+    "slug": "celestial/cta-primary-centered",
+    "file": "patterns/cta-primary-centered.php",
+    "name": "CTA: центрированный призыв на primary",
+    "category": "contact",
+    "eyebrow": "Начнём с разговора"
+  },
+  {
+    "number": 33,
+    "slug": "celestial/cta-dark-editorial",
+    "file": "patterns/cta-dark-editorial.php",
+    "name": "CTA: тёмная редакционная композиция",
+    "category": "contact",
+    "eyebrow": "Есть задача?"
+  },
+  {
+    "number": 34,
+    "slug": "celestial/cta-dark-checklist",
+    "file": "patterns/cta-dark-checklist.php",
+    "name": "CTA: тёмный призыв с чек-листом",
+    "category": "contact",
+    "eyebrow": "Перед стартом"
+  },
+  {
+    "number": 35,
+    "slug": "celestial/cta-dark-photo",
+    "file": "patterns/cta-dark-photo.php",
+    "name": "CTA: тёмный призыв с фотографией",
+    "category": "contact",
+    "eyebrow": "От идеи к форме"
+  },
+  {
+    "number": 36,
+    "slug": "celestial/cta-light-dark-panel",
+    "file": "patterns/cta-light-dark-panel.php",
+    "name": "CTA: тёмная панель на светлом фоне",
+    "category": "contact",
+    "eyebrow": "Приглашение к разговору"
+  },
+  {
+    "number": 37,
+    "slug": "celestial/cta-dark-two-paths",
+    "file": "patterns/cta-dark-two-paths.php",
+    "name": "CTA: два пути на тёмном фоне",
+    "category": "contact",
+    "eyebrow": "Как вам удобнее"
+  },
+  {
+    "number": 38,
+    "slug": "celestial/cta-quiet-centered",
+    "file": "patterns/cta-quiet-centered.php",
+    "name": "CTA: спокойный призыв с одной кнопкой",
+    "category": "contact",
+    "eyebrow": "Продолжим?"
   }
 ]

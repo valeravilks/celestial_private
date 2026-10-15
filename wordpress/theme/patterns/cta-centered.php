@@ -8,8 +8,8 @@
 ?>
 <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"surface","textColor":"contrast","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"blockGap":"var:preset|spacing|60"}},"layout":{"type":"constrained"},"templateLock":"contentOnly"} -->
 <section class="wp-block-group alignfull has-contrast-color has-surface-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"},"className":"celestial-gallery-centered"} -->
-<div class="wp-block-group celestial-gallery-centered">
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"default"},"className":"celestial-content-centered"} -->
+<div class="wp-block-group celestial-content-centered">
 <!-- wp:paragraph {"className":"is-style-subtitle"} -->
 <p class="is-style-subtitle">Следующий шаг</p>
 <!-- /wp:paragraph -->
@@ -20,8 +20,8 @@
 <!-- /wp:group -->
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group">
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"},"className":"celestial-gallery-centered"} -->
-<div class="wp-block-group celestial-gallery-centered">
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"},"className":"celestial-content-centered"} -->
+<div class="wp-block-group celestial-content-centered">
 <!-- wp:paragraph -->
 <p>Расскажите, что хотите изменить. Вместе определим, с чего разумнее начать.</p>
 <!-- /wp:paragraph -->
